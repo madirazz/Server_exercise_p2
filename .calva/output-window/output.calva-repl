@@ -1,0 +1,1934 @@
+; This is the Calva evaluation results output window.
+; TIPS: The keyboard shortcut `ctrl+alt+o o` shows and focuses this window
+;   when connected to a REPL session.
+; Please see https://calva.io/output/ for more info.
+; Happy coding! ♥️
+
+; Jacking in...
+; Starting Jack-in Terminal: cmd.exe /d /c lein update-in :dependencies conj [nrepl,"0.9.0"] -- update-in :plugins conj [cider/cider-nrepl,"0.27.4"] -- update-in [:repl-options,:nrepl-middleware] conj '["cider.nrepl/cider-middleware"]' -- repl :headless
+; Hooking up nREPL sessions...
+; Connected session: clj
+; TIPS:
+;   - You can edit the contents here. Use it as a REPL if you like.
+;   - `alt+enter` evaluates the current top level form.
+;   - `ctrl+enter` evaluates the current form.
+;   - `alt+up` and `alt+down` traverse up and down the REPL command history
+;      when the cursor is after the last contents at the prompt
+;   - Clojure lines in stack traces are peekable and clickable.
+clj꞉winvoice.handler꞉>  ; Use `alt+enter` to evaluate
+; Jack-in done.
+clj꞉winvoice.handler꞉> 
+({:data_attivazione #inst "2018-09-16T22:00:00.000-00:00",
+  :sales "[{:sales \"francesca.maraucci@workinvoice.it\", :date \"2022-01-26 18:27:10\"}]",
+  :standby false,
+  :email "edilrecuperiecoinertisrl@gmail.com",
+  :citta "SAN GIORGIO DI MANTOVA",
+  :walletinfo "91575",
+  :approvazione_rm true,
+  :archiviato false,
+  :riferimento "Olindo Gecchele",
+  :ragione_sociale "EDILRECUPERI E ECOINERTI SRL",
+  :speekinfo
+  "{:mfratingts_ \"2016-12-31 00:00:00.000000\" :rating \"BB\" :credit 33000 :ratingdate \"2017-12-31\" :ateco \"46.73.29\" :ateco_descr \"Commercio All'Ingrosso Di Altri Materiali Da Costruzione\" :size 1 :negativita false}",
+  :cap "46030",
+  :sys-user_id "11f43002-a035-472d-84b8-6b0e940ddbf2",
+  :pin "36972",
+  :indirizzo "VIA MATTEOTTI, 44/C",
+  :stato "attivo",
+  :level 0,
+  :id "SELL00255830-0820-4f0c-ac1e-56eeef491575",
+  :lw_agreement false,
+  :iban "IT12S0503457580000000000392",
+  :responsabile_finance "OLINDO GECCHELE",
+  :requested_documents
+  "[{:name \"ibandoc\" :description \"Frontespizio E/C IBAN\" :required true}{:name \"visura\" :description \"Visura camerale aggiornata\" :required true}{:name \"bilancio\" :description \"Ultimo bilancio depositato\" :required true}{:name \"notaint\" :description \"Nota integrativa ultimo bilancio\" :required true}{:name \"provvisorio\" :description \"Bilancio provvisorio anno in corso\" :required true}{:name \"centralerischi\" :description \"Centrale Rischi Banca d'Italia\" :required true}{:name \"docid\" :description \"Documento di identità del legale rappresentante\" :required true}{:name \"visura_25\" :description \"Visura - persona giuridica che detenga una quota di almeno il 25% della società\" :required false}{:name \"cartaid_25\" :description \"Carta di identità - persona fisica che detenga una quota di almeno il 25% della società\" :required false}{:name \"durc\" :description \"DURC (Documento Unico di Regolarità Contributiva)\" :required false}{:name \"contratto\" :description \"Contratto di adesione firmato (pdf)\" :required true}]",
+  :telefono "3489103679",
+  :pec "edilrecuperiecoinertisrl@pecimprese.it",
+  :iva2 "02393940206",
+  :kycstatus "6",
+  :walletname "91575",
+  :cribisinfo
+  "{:postal_code \"46030\", :registered_office_country_iso_code \"IT\", :address \"VIA GIACOMO MATTEOTTI 44/C\", :province_code \"MN\", :negativita false, :c-size \"C\", :docuid \"cribis_02393940206_21414.pdf\", :data-inizio \"2013-07-09\", :c-ratingdate \"2018-12-31\", :name \"EDILRECUPERI E ECOINERTI SRL\", :piva \"02393940206\", :city \"SAN GIORGIO BIGARELLO\", :ateco_descr \"Commercio All'Ingrosso Di Altri Materiali Da Costruzione\", :paydexindex nil, :ricavi_vendite_prestazioni 1311309, :paydex {:tbtv nil, :tne nil, :below10 {}, :from10to25 {}, :from25to50 {}, :from50to75 {}, :over75 {}}, :c-rating \"2\", :cribisratingts_ \"2019-10-17 09:44:07\", :ateco \"46.73.29\", :responsabile_finance \"OLINDO GECCHELE\", :telefono \"0376372820\", :pec \"EDILRECUPERIECOINERTISRL@PECIMPRESE.IT\", :c-credit 28000, :weburl nil}",
+  :iva "02393940206",
+  :nation "IT"}
+ {:data_attivazione #inst "2019-05-09T22:00:00.000-00:00",
+  :sales "[{:sales \"valentina@workinvoice.it\", :date \"2022-01-26 18:27:10\"}]",
+  :standby true,
+  :email "marco.pirona@unilin.it",
+  :citta "UDINE",
+  :walletinfo "58788",
+  :approvazione_rm true,
+  :archiviato false,
+  :riferimento "MARCO PIRONA",
+  :ragione_sociale "UNILIN ITALIA SRL",
+  :speekinfo
+  "{:final_more_score 8, :negativita false, :sector_score_distribution [{:more_score_label \"D\", :more_score 1, :percentage 0.046} {:more_score_label \"C\", :more_score 2, :percentage 0.716} {:more_score_label \"CC\", :more_score 3, :percentage 2.562} {:more_score_label \"CCC\", :more_score 4, :percentage 7.437} {:more_score_label \"B\", :more_score 5, :percentage 18.832} {:more_score_label \"BB\", :more_score 6, :percentage 25.057} {:more_score_label \"BBB\", :more_score 7, :percentage 23.249} {:more_score_label \"A\", :more_score 8, :percentage 14.342} {:more_score_label \"AA\", :more_score 9, :percentage 7.162} {:more_score_label \"AAA\", :more_score 10, :percentage 0.597}], :ateco_descr \"Commercio all'ingrosso di altri materiali per rivestimenti (inclusi gli apparecchi igienico-sanitari)\", :ratingdate \"2017-12-31\", :size 2, :mfratingts_ \"2019-05-31 16:45:33\", :black_records_check_date \"2019-05-19\", :ateco \"46.73.22\", :has_black_records false, :semaphore 3, :main_info {:postal_code \"33100\", :registered_office_country_iso_code \"IT\", :address \"VIA LINUSSIO 52\", :cciaa \"UD\", :province_code \"UD\", :legal_form_type_code \"SC\", :country_description_en \"ITALY\", :registered_office_country_description_en \"ITALY\", :name \"UNILIN ITALIA S.R.L.\", :piva \"02399050307\", :ateco_sector_code \"46.73.22\", :city \"UDINE\", :registered_office_country_description_it \"ITALIA\", :legal_form_type_description_en \"LIMITED COMPANY\", :country_iso_code \"IT\", :legal_form_description_it \"SOCIETA' A RESPONSABILITA' LIMITATA\", :legal_form_description_en \"LIMITED LIABILITY COMPANY - SRL\", :rea 257725, :status_description_it \"Attiva\", :fiscal_code \"02399050307\", :country_description_it \"ITALIA\", :status_code \"A\", :ateco_sector_description_en \"Wholesale of wood, construction materials and sanitary equipment\", :status_description_en \"Active\", :registration_date \"2005-08-03\", :legal_form_type_description_it \"SOCIETA' DI CAPITALI\", :ateco_sector_description_it \"Commercio all'ingrosso di altri materiali per rivestimenti (inclusi gli apparecchi igienico-sanitari)\", :legal_form_code \"SR\"}, :accounts [{:closing_date \"2017-12-31\", :months 12, :is_consolidated false, :account_size 2, :assessment {:more_score 8, :probability_of_default 0.18, :confidence 100.0, :leverage_ratio_score 10, :current_ratio_score 7, :roe_ratio_score 6}, :sector {:more_score 6.313, :leverage_ratio_score 8.239, :current_ratio_score 7.0, :roe_ratio_score 5.738}} {:closing_date \"2016-12-31\", :months 12, :is_consolidated false, :account_size 2, :assessment {:more_score 8, :probability_of_default 0.2, :confidence 100.0, :leverage_ratio_score 10, :current_ratio_score 7, :roe_ratio_score 6}, :sector {:more_score 6.184, :leverage_ratio_score 7.1530000000000005, :current_ratio_score 7.0, :roe_ratio_score 5.904}} {:closing_date \"2015-12-31\", :months 12, :is_consolidated false, :account_size 2, :assessment {:more_score 8, :probability_of_default 0.17, :confidence 100.0, :leverage_ratio_score 10, :current_ratio_score 7, :roe_ratio_score 6}, :sector {:more_score 6.141, :leverage_ratio_score 7.295999999999999, :current_ratio_score 7.0, :roe_ratio_score 5.837000000000001}}], :credit 390000, :rating \"A\", :credit_limit 390000}",
+  :cap "33100",
+  :sys-user_id "f4bbd7be-626f-4299-ab3a-64df2e27a342",
+  :pin "51712",
+  :indirizzo "VIA JACOPO LINUSSIO 52",
+  :stato "attivo",
+  :level 0,
+  :id "SELL574e4eff-14a0-4a18-9ece-2cdb56358788",
+  :lw_agreement false,
+  :iban "IT04B0200864030000040502991",
+  :responsabile_finance "RUBEN DRIES J. DESMET",
+  :requested_documents
+  "[{:name \"ibandoc\" :description \"Frontespizio E/C IBAN\" :required true}{:name \"visura\" :description \"Visura camerale aggiornata\" :required false}{:name \"bilancio\" :description \"Ultimo bilancio depositato\" :required false}{:name \"notaint\" :description \"Nota integrativa ultimo bilancio\" :required true}{:name \"provvisorio\" :description \"Bilancio provvisorio anno in corso\" :required true}{:name \"centralerischi\" :description \"Centrale Rischi Banca d'Italia\" :required true}{:name \"docid\" :description \"Documento di identità del legale rappresentante\" :required true}{:name \"visura_25\" :description \"Visura - persona giuridica che detenga una quota di almeno il 25% della società\" :required false}{:name \"cartaid_25\" :description \"Carta di identità - persona fisica che detenga una quota di almeno il 25% della società\" :required false}{:name \"durc\" :description \"DURC (Documento Unico di Regolarità Contributiva)\" :required false}{:name \"contratto\" :description \"Contratto di adesione firmato (pdf)\" :required true}]]",
+  :telefono "0432522727",
+  :pec "UNILINITALIA@PEC.IT",
+  :iva2 "02399050307",
+  :kycstatus "6",
+  :walletname "58788",
+  :cribisinfo
+  "{:totale-debiti 930154, :postal_code \"33100\", :registered_office_country_iso_code \"IT\", :address \"VIA JACOPO LINUSSIO 52\", :negmessages \"\", :province_code \"UD\", :numero-bilanci 5, :negativita false, :c-size \"2A\", :docuid \"cribis_02399050307_37739.pdf\", :data-inizio \"2006-02-01\", :c-ratingdate \"2019-12-31\", :name \"UNILIN ITALIA SRL\", :piva \"02399050307\", :city \"UDINE\", :cf-resp \"DSMRND79L06Z103E\", :ateco_descr \"Commercio All'Ingrosso Di Altri Materiali Per Rivestimenti (Inclusi Gli Apparecchi Igienico-Sanitari)\", :paydexindex 80, :ricavi_vendite_prestazioni 10193665, :paydex {:tbtv 168688, :tne 40, :below10 {:NE 33, :BTV 44738, :BQTOE 100}, :from10to25 {:NE 7, :BTV 123950, :BQTOE 100}, :from25to50 {}, :from50to75 {}, :over75 {}}, :c-rating \"1\", :cribisratingts_ \"2021-03-31 14:44:06\", :ateco \"46.73.22\", :registro-imprese \"2005-08-03\", :responsabile_finance \"RUBEN DRIES J. DESMET\", :telefono \"0432522727\", :pec \"UNILINITALIA@PEC.IT\", :iva2 \"02399050307\", :c-credit 880000, :weburl \"www.unilinitalia.it\", :nr-reg \"UD 257725\"}",
+  :iva "02399050307",
+  :nation "IT"})
+clj꞉winvoice.query꞉> 
+; Syntax error compiling at (c:\Users\user\winvoice\src\winvoice\query.clj:110:9).
+; Unable to resolve symbol: id in this context
+clj꞉winvoice.query꞉> 
+#'winvoice.query/get-debtors-rs
+clj꞉winvoice.query꞉> 
+#'winvoice.query/cedenti
+clj꞉winvoice.query꞉> 
+nil
+; WARNING: update already refers to: #'clojure.core/update in namespace: winvoice.query, being replaced by: #'korma.core/update
+clj꞉winvoice.query꞉> 
+nil
+; WARNING: update already refers to: #'clojure.core/update in namespace: winvoice.query, being replaced by: #'korma.core/update
+clj꞉winvoice.query꞉> 
+#'winvoice.query/get-fatture-due
+clj꞉winvoice.query꞉> 
+#'winvoice.query/get-invoice-amount-anticipata
+clj꞉winvoice.query꞉> 
+()
+clj꞉winvoice.query꞉> 
+()
+clj꞉winvoice.query꞉> 
+#'winvoice.query/get-invoice-amount-anticipata
+clj꞉winvoice.query꞉> 
+({:sellers_id "SELL1b780fc9-5cf5-47c5-ad39-bdb052bdfb5e",
+  :numero "548 FD",
+  :data_default nil,
+  :cedenti_id "CED_471a1180-7b38-4b20-a979-48a39a214308",
+  :clienti_id "CLI_5be8fe0b-8bfa-43f2-807f-dab45806217a",
+  :data_pagamento #inst "2022-06-29T22:00:00.000-00:00",
+  :data_debitore nil,
+  :id "FAT_02743338-2a20-41b7-974a-d3b19e988f15",
+  :data_emissione #inst "2021-12-14T23:00:00.000-00:00",
+  :data_scadenza #inst "2022-06-29T22:00:00.000-00:00",
+  :importo 2320276}
+ {:sellers_id "SELL8161b598-a04a-4657-9bf9-7db44af2ea5f",
+  :numero "415 FD",
+  :data_default nil,
+  :cedenti_id "CED_7643aaf6-928d-485b-add8-27f1e7892f4a",
+  :clienti_id "CLI_f714643b-68e1-4356-a3ec-09db8d79041e",
+  :data_pagamento #inst "2022-06-29T22:00:00.000-00:00",
+  :data_debitore nil,
+  :id "FAT_6404ec69-4bc0-4038-abd4-8dd7deec67e2",
+  :data_emissione #inst "2021-12-14T23:00:00.000-00:00",
+  :data_scadenza #inst "2022-06-29T22:00:00.000-00:00",
+  :importo 1229258}
+ {:sellers_id "SELL99a0ec94-6ef7-4eea-8aca-83e93a622a71",
+  :numero "520 FD",
+  :data_default nil,
+  :cedenti_id "CED_61135592-3ea7-4fac-b06d-d4a11ba7996d",
+  :clienti_id "CLI_6cd2036c-5a13-4dbb-8359-3ec50ddbf533",
+  :data_pagamento #inst "2022-06-29T22:00:00.000-00:00",
+  :data_debitore nil,
+  :id "FAT_4cb14276-0b41-4785-8e7a-0bd0a9476dbd",
+  :data_emissione #inst "2021-12-14T23:00:00.000-00:00",
+  :data_scadenza #inst "2022-06-29T22:00:00.000-00:00",
+  :importo 8723000}
+ {:sellers_id "SELL8161b598-a04a-4657-9bf9-7db44af2ea5f",
+  :numero "414 FD",
+  :data_default nil,
+  :cedenti_id "CED_9d649458-2286-42dd-ae16-0ad5b72fe2b8",
+  :clienti_id "CLI_bfb69528-e71d-4bb9-834f-911f9bdb80fe",
+  :data_pagamento #inst "2022-06-29T22:00:00.000-00:00",
+  :data_debitore nil,
+  :id "FAT_aeb9eb78-22cc-4010-8da7-bd93607c64b4",
+  :data_emissione #inst "2021-12-14T23:00:00.000-00:00",
+  :data_scadenza #inst "2022-06-29T22:00:00.000-00:00",
+  :importo 28920294}
+ {:sellers_id "SELL01a3c70d-1d82-4aa0-a9dd-45ad2800ed85",
+  :numero "253 FD",
+  :data_default nil,
+  :cedenti_id "CED_3ce6d487-4fdf-4707-9d48-bde6866d7b6e",
+  :clienti_id "CLI_cc68093c-b9dc-42a5-99a4-6d23a7aa4bb2",
+  :data_pagamento #inst "2022-06-29T22:00:00.000-00:00",
+  :data_debitore nil,
+  :id "FAT_a21d8673-ba0d-4f1c-94a8-56bf49ae72fd",
+  :data_emissione #inst "2021-12-14T23:00:00.000-00:00",
+  :data_scadenza #inst "2022-06-29T22:00:00.000-00:00",
+  :importo 3111461}
+ {:sellers_id "SELLc553b820-2a1c-448f-a55a-1b65949bc0b3",
+  :numero "80",
+  :data_default nil,
+  :cedenti_id "CED_71941355-d0e2-40e4-b8c8-4ff435496886",
+  :clienti_id "CLI_97eacc06-2646-4a17-8dce-b896bea7b632",
+  :data_pagamento #inst "2022-05-30T22:00:00.000-00:00",
+  :data_debitore nil,
+  :id "FAT_9fd622af-ced9-48a9-a857-fff7f781224a",
+  :data_emissione #inst "2021-11-29T23:00:00.000-00:00",
+  :data_scadenza #inst "2022-05-30T22:00:00.000-00:00",
+  :importo 4546700}
+ {:sellers_id "SELLc553b820-2a1c-448f-a55a-1b65949bc0b3",
+  :numero "122",
+  :data_default nil,
+  :cedenti_id "CED_9ac72184-5623-42d4-8e7e-ee65dd038f37",
+  :clienti_id "CLI_a532f491-1c09-4c70-8ad9-e2f33c3e7606",
+  :data_pagamento #inst "2022-05-30T22:00:00.000-00:00",
+  :data_debitore nil,
+  :id "FAT_60591d1f-dc1e-42cd-966d-b37a34629b16",
+  :data_emissione #inst "2021-11-29T23:00:00.000-00:00",
+  :data_scadenza #inst "2022-05-30T22:00:00.000-00:00",
+  :importo 4451200}
+ {:sellers_id "SELL13214926-8bef-4805-ad2b-0d36e64d9852",
+  :numero "84",
+  :data_default nil,
+  :cedenti_id "CED_e19f93bb-cc5f-4b1f-80bc-aedf83862207",
+  :clienti_id "CLI_abab17b9-0b01-41d9-b56e-3f1f6e0b4ba5",
+  :data_pagamento #inst "2022-05-30T22:00:00.000-00:00",
+  :data_debitore nil,
+  :id "FAT_46c22652-2806-4955-a7e6-7b0c0ae46362",
+  :data_emissione #inst "2021-11-29T23:00:00.000-00:00",
+  :data_scadenza #inst "2022-05-30T22:00:00.000-00:00",
+  :importo 1805200}
+ {:sellers_id "SELL99a0ec94-6ef7-4eea-8aca-83e93a622a71",
+  :numero "39",
+  :data_default nil,
+  :cedenti_id "CED_37436dd5-cc67-4d46-9b3c-ac6ca42452f1",
+  :clienti_id "CLI_902b605e-11dd-4712-a78c-c2d49451997d",
+  :data_pagamento #inst "2022-06-29T22:00:00.000-00:00",
+  :data_debitore nil,
+  :id "FAT_b659b394-665d-41a5-a224-c8b12360d45e",
+  :data_emissione #inst "2021-11-30T23:00:00.000-00:00",
+  :data_scadenza #inst "2022-06-29T22:00:00.000-00:00",
+  :importo 2468489}
+ {:sellers_id "SELL8161b598-a04a-4657-9bf9-7db44af2ea5f",
+  :numero "54 FB",
+  :data_default nil,
+  :cedenti_id "CED_449f7042-7818-4cd3-b6ac-63b32836d7b4",
+  :clienti_id "CLI_7f80fdf4-601b-4939-932b-71bb749be1ef",
+  :data_pagamento #inst "2022-06-29T22:00:00.000-00:00",
+  :data_debitore nil,
+  :id "FAT_75382109-76b1-4271-996e-1bd5e1e31709",
+  :data_emissione #inst "2021-11-30T23:00:00.000-00:00",
+  :data_scadenza #inst "2022-06-29T22:00:00.000-00:00",
+  :importo 2771831}
+ {:sellers_id "SELL96a87e94-9779-40ea-bf97-c75b5200bcb5",
+  :numero "191FB",
+  :data_default nil,
+  :cedenti_id "CED_3c6abe38-3bd3-45c2-bd5c-67695b9ce64c",
+  :clienti_id "CLI_3e3a3209-af3a-4fe2-9cb3-9c6c744a195b",
+  :data_pagamento #inst "2022-06-29T22:00:00.000-00:00",
+  :data_debitore nil,
+  :id "FAT_e7b98db7-57c3-48ea-959a-f4f81f6f05db",
+  :data_emissione #inst "2021-11-30T23:00:00.000-00:00",
+  :data_scadenza #inst "2022-06-29T22:00:00.000-00:00",
+  :importo 1718426}
+ {:sellers_id "SELL1b780fc9-5cf5-47c5-ad39-bdb052bdfb5e",
+  :numero "24 FB",
+  :data_default nil,
+  :cedenti_id "CED_cf8e3d7e-1f88-48f8-bd97-4283769c17fd",
+  :clienti_id "CLI_fa876981-b21a-4dd7-83da-9f30a068f8e9",
+  :data_pagamento #inst "2022-06-29T22:00:00.000-00:00",
+  :data_debitore nil,
+  :id "FAT_d431db4a-32d6-476e-9b08-5579b44cc503",
+  :data_emissione #inst "2021-11-30T23:00:00.000-00:00",
+  :data_scadenza #inst "2022-06-29T22:00:00.000-00:00",
+  :importo 6235225}
+ {:sellers_id "SELL2601e91d-5f3a-4823-9ac5-111b520f26a4",
+  :numero "191/VE",
+  :data_default nil,
+  :cedenti_id "CED_6ad31118-beb9-47af-9306-fcfab491d9e8",
+  :clienti_id "CLI_00b68821-5bd3-4cfc-8ab8-2beb4a0a1722",
+  :data_pagamento #inst "2022-05-30T22:00:00.000-00:00",
+  :data_debitore nil,
+  :id "FAT_ee0ef115-2566-4ce7-a768-671f60919bb5",
+  :data_emissione #inst "2021-11-15T23:00:00.000-00:00",
+  :data_scadenza #inst "2022-05-30T22:00:00.000-00:00",
+  :importo 40565000}
+ {:sellers_id "SELLc71ecab5-c602-4131-ae7c-0583e9689a29",
+  :numero "880",
+  :data_default nil,
+  :cedenti_id "CED_acc9eeb6-b336-493e-97dc-26927e82c3f9",
+  :clienti_id "CLI_273ad17e-efab-4b82-a117-bca11422c5f0",
+  :data_pagamento #inst "2022-06-29T22:00:00.000-00:00",
+  :data_debitore nil,
+  :id "FAT_89030358-4158-4018-9878-495a4903a306",
+  :data_emissione #inst "2021-12-30T23:00:00.000-00:00",
+  :data_scadenza #inst "2022-06-29T22:00:00.000-00:00",
+  :importo 2559200}
+ {:sellers_id "SELLc71ecab5-c602-4131-ae7c-0583e9689a29",
+  :numero "871 FD",
+  :data_default nil,
+  :cedenti_id "CED_6ff3bbc5-a594-4df9-97d2-58cb49612ecc",
+  :clienti_id "CLI_6295e6b9-cb33-4e82-8358-040bd114dbf1",
+  :data_pagamento #inst "2022-06-29T22:00:00.000-00:00",
+  :data_debitore nil,
+  :id "FAT_4892ab57-32ed-4a16-97b8-5ce120a3dba0",
+  :data_emissione #inst "2021-12-30T23:00:00.000-00:00",
+  :data_scadenza #inst "2022-06-29T22:00:00.000-00:00",
+  :importo 11319950}
+ {:sellers_id "SELL8161b598-a04a-4657-9bf9-7db44af2ea5f",
+  :numero "450 FD",
+  :data_default nil,
+  :cedenti_id "CED_c8518082-76ac-4bce-9625-1ea2d53405b8",
+  :clienti_id "CLI_e4460c81-3387-4a9e-bbd7-ab15f421f09d",
+  :data_pagamento #inst "2022-06-29T22:00:00.000-00:00",
+  :data_debitore nil,
+  :id "FAT_6b5aaa68-b457-4bc6-8f47-6124350bf2df",
+  :data_emissione #inst "2021-12-30T23:00:00.000-00:00",
+  :data_scadenza #inst "2022-06-29T22:00:00.000-00:00",
+  :importo 28495909}
+ {:sellers_id "SELL99a0ec94-6ef7-4eea-8aca-83e93a622a71",
+  :numero "555",
+  :data_default nil,
+  :cedenti_id "CED_86c703aa-0d5f-4a78-abda-fd8e5b79e577",
+  :clienti_id "CLI_05a1a8ce-107d-45a7-bfda-ead52bac142e",
+  :data_pagamento #inst "2022-06-29T22:00:00.000-00:00",
+  :data_debitore nil,
+  :id "FAT_1f94b058-cccd-4b76-9a50-4fbdf67e517a",
+  :data_emissione #inst "2021-12-30T23:00:00.000-00:00",
+  :data_scadenza #inst "2022-06-29T22:00:00.000-00:00",
+  :importo 3430199}
+ {:sellers_id "SELL99a0ec94-6ef7-4eea-8aca-83e93a622a71",
+  :numero "549 FD",
+  :data_default nil,
+  :cedenti_id "CED_1691488b-263c-4de2-9bac-5ab1b7ee62fa",
+  :clienti_id "CLI_a16f61fa-2d46-46c1-b0df-0c287d36b678",
+  :data_pagamento #inst "2022-06-29T22:00:00.000-00:00",
+  :data_debitore nil,
+  :id "FAT_d439adf0-4ccb-44e5-a315-14476450c6dc",
+  :data_emissione #inst "2021-12-30T23:00:00.000-00:00",
+  :data_scadenza #inst "2022-06-29T22:00:00.000-00:00",
+  :importo 12180750}
+ {:sellers_id "SELL99a0ec94-6ef7-4eea-8aca-83e93a622a71",
+  :numero "553",
+  :data_default nil,
+  :cedenti_id "CED_0fc7a2b6-0786-4fc0-a8a4-e46b2a996bd4",
+  :clienti_id "CLI_68a00906-c8e5-4218-9f99-6b4466d6797a",
+  :data_pagamento #inst "2022-06-29T22:00:00.000-00:00",
+  :data_debitore nil,
+  :id "FAT_0fa0e123-7938-4dd0-8265-fcb5cc633f48",
+  :data_emissione #inst "2021-12-30T23:00:00.000-00:00",
+  :data_scadenza #inst "2022-06-29T22:00:00.000-00:00",
+  :importo 23204800}
+ {:sellers_id "SELL99a0ec94-6ef7-4eea-8aca-83e93a622a71",
+  :numero "554",
+  :data_default nil,
+  :cedenti_id "CED_85e4ea38-9145-4496-aee3-7179a0867ff4",
+  :clienti_id "CLI_efe0240f-388f-4740-b365-c81d096ecf4b",
+  :data_pagamento #inst "2022-06-29T22:00:00.000-00:00",
+  :data_debitore nil,
+  :id "FAT_25a53ed5-298b-49ab-a6fe-55d6dd6cc998",
+  :data_emissione #inst "2021-12-30T23:00:00.000-00:00",
+  :data_scadenza #inst "2022-06-29T22:00:00.000-00:00",
+  :importo 1337100}
+ {:sellers_id "SELL1b780fc9-5cf5-47c5-ad39-bdb052bdfb5e",
+  :numero "586 FD",
+  :data_default nil,
+  :cedenti_id "CED_a6060926-dbb9-4e0d-9fb5-48547b8baade",
+  :clienti_id "CLI_8eb1509d-dd5f-4a43-9cfc-e915ba19445a",
+  :data_pagamento #inst "2022-06-29T22:00:00.000-00:00",
+  :data_debitore nil,
+  :id "FAT_bc4b7079-473c-4f54-ae14-b07dedc09220",
+  :data_emissione #inst "2021-12-30T23:00:00.000-00:00",
+  :data_scadenza #inst "2022-06-29T22:00:00.000-00:00",
+  :importo 31727053}
+ {:sellers_id "SELL99a0ec94-6ef7-4eea-8aca-83e93a622a71",
+  :numero "540 FD",
+  :data_default nil,
+  :cedenti_id "CED_6f0dfce7-eb1a-4595-bec8-3424f3327536",
+  :clienti_id "CLI_a7dc2d80-da1c-4e99-9786-a0b9ac3f82ab",
+  :data_pagamento #inst "2022-06-29T22:00:00.000-00:00",
+  :data_debitore nil,
+  :id "FAT_8b6ac647-a38d-420a-aa77-3514f7be4ef0",
+  :data_emissione #inst "2021-12-30T23:00:00.000-00:00",
+  :data_scadenza #inst "2022-06-29T22:00:00.000-00:00",
+  :importo 7894850}
+ {:sellers_id "SELL8161b598-a04a-4657-9bf9-7db44af2ea5f",
+  :numero "57 FB",
+  :data_default nil,
+  :cedenti_id "CED_b2548566-c0c5-449a-9bd8-59c7a71e442b",
+  :clienti_id "CLI_3cea8655-6a9e-4700-8573-ebbb622981e7",
+  :data_pagamento #inst "2022-06-29T22:00:00.000-00:00",
+  :data_debitore nil,
+  :id "FAT_3b67b2dd-4f6e-4957-8e7a-d703721b2331",
+  :data_emissione #inst "2021-12-30T23:00:00.000-00:00",
+  :data_scadenza #inst "2022-06-29T22:00:00.000-00:00",
+  :importo 2275907}
+ {:sellers_id "SELLc553b820-2a1c-448f-a55a-1b65949bc0b3",
+  :numero "144",
+  :data_default nil,
+  :cedenti_id "CED_83f0a604-3c4f-4cf8-88f1-d171c4d78b8a",
+  :clienti_id "CLI_795f5385-91c9-4483-bbc9-1ea2128d252d",
+  :data_pagamento #inst "2022-06-29T22:00:00.000-00:00",
+  :data_debitore nil,
+  :id "FAT_11fb6b4b-8c52-421e-9859-68d2f00ea1d6",
+  :data_emissione #inst "2021-12-30T23:00:00.000-00:00",
+  :data_scadenza #inst "2022-06-29T22:00:00.000-00:00",
+  :importo 6489700}
+ {:sellers_id "SELLc553b820-2a1c-448f-a55a-1b65949bc0b3",
+  :numero "91",
+  :data_default nil,
+  :cedenti_id "CED_a2b21103-1772-4c18-a4f6-24c80921baaf",
+  :clienti_id "CLI_e1c62f48-e4bd-4cda-8997-d69a751cb9f3",
+  :data_pagamento #inst "2022-06-29T22:00:00.000-00:00",
+  :data_debitore nil,
+  :id "FAT_78077ec6-2c67-4af7-a68e-9a1464e18477",
+  :data_emissione #inst "2021-12-30T23:00:00.000-00:00",
+  :data_scadenza #inst "2022-06-29T22:00:00.000-00:00",
+  :importo 6413200}
+ {:sellers_id "SELL8161b598-a04a-4657-9bf9-7db44af2ea5f",
+  :numero "455",
+  :data_default nil,
+  :cedenti_id "CED_87ee13b2-d220-4e80-80c7-5fb4cb642cf0",
+  :clienti_id "CLI_293314d2-af58-4307-bcfd-644db4c041d3",
+  :data_pagamento #inst "2022-06-29T22:00:00.000-00:00",
+  :data_debitore nil,
+  :id "FAT_0b472324-2ed3-46f8-a519-c6cc58681a13",
+  :data_emissione #inst "2021-12-30T23:00:00.000-00:00",
+  :data_scadenza #inst "2022-06-29T22:00:00.000-00:00",
+  :importo 10344900}
+ {:sellers_id "SELL96a87e94-9779-40ea-bf97-c75b5200bcb5",
+  :numero "391",
+  :data_default nil,
+  :cedenti_id "CED_688e8d2a-722e-4cc5-b871-2fbe5d6b5ce0",
+  :clienti_id "CLI_2b051655-8e1c-48b7-a894-9f068835ff56",
+  :data_pagamento #inst "2022-06-29T22:00:00.000-00:00",
+  :data_debitore nil,
+  :id "FAT_50ebfd5a-0682-4a6d-be87-9d0887c811f5",
+  :data_emissione #inst "2021-12-30T23:00:00.000-00:00",
+  :data_scadenza #inst "2022-06-29T22:00:00.000-00:00",
+  :importo 18760200}
+ {:sellers_id "SELL96a87e94-9779-40ea-bf97-c75b5200bcb5",
+  :numero "393",
+  :data_default nil,
+  :cedenti_id "CED_4df7ebe5-a1c1-4a13-92a3-210af9f2e6bd",
+  :clienti_id "CLI_36ad02d1-ccef-49f3-8c22-0d99060e5fb0",
+  :data_pagamento #inst "2022-06-29T22:00:00.000-00:00",
+  :data_debitore nil,
+  :id "FAT_0fea1e24-a797-4f9b-87ae-8ea751a293be",
+  :data_emissione #inst "2021-12-30T23:00:00.000-00:00",
+  :data_scadenza #inst "2022-06-29T22:00:00.000-00:00",
+  :importo 4149473}
+ {:sellers_id "SELL01a3c70d-1d82-4aa0-a9dd-45ad2800ed85",
+  :numero "268 FD",
+  :data_default nil,
+  :cedenti_id "CED_17131051-480b-4a4b-9242-9d81d7e4cad2",
+  :clienti_id "CLI_755edf55-9291-4a71-a943-201ca880d4d3",
+  :data_pagamento #inst "2022-06-29T22:00:00.000-00:00",
+  :data_debitore nil,
+  :id "FAT_598bdc23-268e-41fb-8ca6-c0cdc0bc691a",
+  :data_emissione #inst "2021-12-30T23:00:00.000-00:00",
+  :data_scadenza #inst "2022-06-29T22:00:00.000-00:00",
+  :importo 12341200}
+ {:sellers_id "SELL01a3c70d-1d82-4aa0-a9dd-45ad2800ed85",
+  :numero "266 FD",
+  :data_default nil,
+  :cedenti_id "CED_d9c9797c-04e1-46aa-a073-6a678cf17d37",
+  :clienti_id "CLI_e1df9882-f1e6-4c89-a542-f0de02065d57",
+  :data_pagamento #inst "2022-06-29T22:00:00.000-00:00",
+  :data_debitore nil,
+  :id "FAT_b9c42a3f-4f28-4a19-b448-b070f249651c",
+  :data_emissione #inst "2021-12-30T23:00:00.000-00:00",
+  :data_scadenza #inst "2022-06-29T22:00:00.000-00:00",
+  :importo 3665486}
+ {:sellers_id "SELL1b780fc9-5cf5-47c5-ad39-bdb052bdfb5e",
+  :numero "547 FD",
+  :data_default nil,
+  :cedenti_id "CED_a22ef884-070c-4017-882d-5709e28ea00a",
+  :clienti_id "CLI_d0267c35-1809-4b52-9e80-2efb46517998",
+  :data_pagamento #inst "2022-06-29T22:00:00.000-00:00",
+  :data_debitore nil,
+  :id "FAT_63a531ad-755b-4730-8473-47346a9ee597",
+  :data_emissione #inst "2021-12-14T23:00:00.000-00:00",
+  :data_scadenza #inst "2022-06-29T22:00:00.000-00:00",
+  :importo 32425965}
+ {:sellers_id "SELLc71ecab5-c602-4131-ae7c-0583e9689a29",
+  :numero "879",
+  :data_default nil,
+  :cedenti_id "CED_a6821122-9e73-4995-aed3-25b29b7b5044",
+  :clienti_id "CLI_56e3c1c9-e75b-41e3-9cf9-1929ea4737a2",
+  :data_pagamento #inst "2022-06-29T22:00:00.000-00:00",
+  :data_debitore nil,
+  :id "FAT_dd2795e7-1bde-4ef3-8a09-7ce4ffa761ac",
+  :data_emissione #inst "2021-12-30T23:00:00.000-00:00",
+  :data_scadenza #inst "2022-06-29T22:00:00.000-00:00",
+  :importo 35416100}
+ {:sellers_id "SELL1ee99618-0bbf-4229-9e51-c3d831b2906c",
+  :numero "51/00070",
+  :data_default nil,
+  :cedenti_id "CED_a785d7fc-28a5-4481-a712-0445b96dd738",
+  :clienti_id "CLI_6ad7e31e-675e-4a30-8c62-ffa20a468669",
+  :data_pagamento #inst "2022-05-30T22:00:00.000-00:00",
+  :data_debitore nil,
+  :id "FAT_49493c5b-5c87-46c4-8cea-f76f24e969ab",
+  :data_emissione #inst "2022-01-13T23:00:00.000-00:00",
+  :data_scadenza #inst "2022-05-30T22:00:00.000-00:00",
+  :importo 446518}
+ {:sellers_id "SELL1b780fc9-5cf5-47c5-ad39-bdb052bdfb5e",
+  :numero "587 FD",
+  :data_default nil,
+  :cedenti_id "CED_219ced7c-f2f0-4ded-89ac-715549148fdf",
+  :clienti_id "CLI_07deaeda-1547-47c4-b729-1d674ecfaad5",
+  :data_pagamento #inst "2022-06-29T22:00:00.000-00:00",
+  :data_debitore nil,
+  :id "FAT_7bcd2939-8fed-4a19-8fbe-a67fd98c63d5",
+  :data_emissione #inst "2021-12-30T23:00:00.000-00:00",
+  :data_scadenza #inst "2022-06-29T22:00:00.000-00:00",
+  :importo 2528639}
+ {:sellers_id "SELL13214926-8bef-4805-ad2b-0d36e64d9852",
+  :numero "92 FD",
+  :data_default nil,
+  :cedenti_id "CED_3b0d51f1-25f0-46da-b2ee-c363398f91cb",
+  :clienti_id "CLI_fe1040db-5ab4-419a-9574-2b9053fa8f83",
+  :data_pagamento #inst "2022-06-29T22:00:00.000-00:00",
+  :data_debitore nil,
+  :id "FAT_7c8c09d0-2b56-46fe-858d-398925d52cc5",
+  :data_emissione #inst "2021-12-30T23:00:00.000-00:00",
+  :data_scadenza #inst "2022-06-29T22:00:00.000-00:00",
+  :importo 13204250}
+ {:sellers_id "SELL01a3c70d-1d82-4aa0-a9dd-45ad2800ed85",
+  :numero "3 FD",
+  :data_default nil,
+  :cedenti_id "CED_25a774df-ed4d-4223-8fa6-48d86a5112ba",
+  :clienti_id "CLI_4b7736ec-00ce-4541-8581-29a91e9187c7",
+  :data_pagamento #inst "2022-07-30T22:00:00.000-00:00",
+  :data_debitore nil,
+  :id "FAT_f716287c-71c4-40a9-9b09-590058bd59b5",
+  :data_emissione #inst "2022-01-14T23:00:00.000-00:00",
+  :data_scadenza #inst "2022-07-30T22:00:00.000-00:00",
+  :importo 3278179}
+ {:sellers_id "SELL99a0ec94-6ef7-4eea-8aca-83e93a622a71",
+  :numero "4 FD",
+  :data_default nil,
+  :cedenti_id "CED_a6cf24a4-d965-4258-8429-08f7593aab21",
+  :clienti_id "CLI_b6c48962-dcc0-4d1f-a169-848ca734ea85",
+  :data_pagamento #inst "2022-07-30T22:00:00.000-00:00",
+  :data_debitore nil,
+  :id "FAT_cfc48713-0d83-460f-b307-8604181adee6",
+  :data_emissione #inst "2022-01-14T23:00:00.000-00:00",
+  :data_scadenza #inst "2022-07-30T22:00:00.000-00:00",
+  :importo 9470000}
+ {:sellers_id "SELL8161b598-a04a-4657-9bf9-7db44af2ea5f",
+  :numero "12 FD",
+  :data_default nil,
+  :cedenti_id "CED_f194724a-75ca-4eae-b399-832a1dd65dcd",
+  :clienti_id "CLI_09850e59-9ebc-4c6d-b075-d0c251dedde6",
+  :data_pagamento #inst "2022-07-30T22:00:00.000-00:00",
+  :data_debitore nil,
+  :id "FAT_9df42f93-ca30-47f7-b8ce-3edf7ca45454",
+  :data_emissione #inst "2022-01-14T23:00:00.000-00:00",
+  :data_scadenza #inst "2022-07-30T22:00:00.000-00:00",
+  :importo 5083200}
+ {:sellers_id "SELL8161b598-a04a-4657-9bf9-7db44af2ea5f",
+  :numero "1 FD",
+  :data_default nil,
+  :cedenti_id "CED_99cc4ba3-c8a8-4138-94d1-53197f178b57",
+  :clienti_id "CLI_e2d1c51c-6949-457f-b6c2-cac3336ca52e",
+  :data_pagamento #inst "2022-07-30T22:00:00.000-00:00",
+  :data_debitore nil,
+  :id "FAT_6e03d96e-d422-4b84-bc65-94d2c43bee9d",
+  :data_emissione #inst "2022-01-14T23:00:00.000-00:00",
+  :data_scadenza #inst "2022-07-30T22:00:00.000-00:00",
+  :importo 26269035}
+ {:sellers_id "SELL1b780fc9-5cf5-47c5-ad39-bdb052bdfb5e",
+  :numero "18 FD",
+  :data_default nil,
+  :cedenti_id "CED_f7169e81-a2e3-43a4-be3e-f20218d63dba",
+  :clienti_id "CLI_ea447cec-1c3f-4eeb-b9cb-b44bf9b64302",
+  :data_pagamento #inst "2022-07-30T22:00:00.000-00:00",
+  :data_debitore nil,
+  :id "FAT_422d734c-e3f1-4815-abf6-696fc451cb8d",
+  :data_emissione #inst "2022-01-14T23:00:00.000-00:00",
+  :data_scadenza #inst "2022-07-30T22:00:00.000-00:00",
+  :importo 2313457}
+ {:sellers_id "SELL1b780fc9-5cf5-47c5-ad39-bdb052bdfb5e",
+  :numero "17 FD",
+  :data_default nil,
+  :cedenti_id "CED_6e94e86b-218a-453c-8147-ceb406104585",
+  :clienti_id "CLI_72f01aba-0496-478d-95f4-64f382985ee4",
+  :data_pagamento #inst "2022-07-30T22:00:00.000-00:00",
+  :data_debitore nil,
+  :id "FAT_0c6f4962-b355-49cb-a9a1-5357aeda1d54",
+  :data_emissione #inst "2022-01-14T23:00:00.000-00:00",
+  :data_scadenza #inst "2022-07-30T22:00:00.000-00:00",
+  :importo 27577853}
+ {:sellers_id "SELL1ee99618-0bbf-4229-9e51-c3d831b2906c",
+  :numero "51/00166",
+  :data_default nil,
+  :cedenti_id "CED_2544b014-abf1-446d-a635-13100be11d91",
+  :clienti_id "CLI_2cbb7327-568a-4ce9-8ba2-676b19aa5b67",
+  :data_pagamento #inst "2022-05-30T22:00:00.000-00:00",
+  :data_debitore nil,
+  :id "FAT_f8e73421-be56-41a9-afca-d5063c2670d9",
+  :data_emissione #inst "2022-01-27T23:00:00.000-00:00",
+  :data_scadenza #inst "2022-05-30T22:00:00.000-00:00",
+  :importo 517195}
+ {:sellers_id "SELL0b39c2f2-d6a4-4893-959d-96aee7a5055d",
+  :numero "10",
+  :data_default nil,
+  :cedenti_id "CED_44ae488a-6266-40a6-83b3-40b614d52e43",
+  :clienti_id "CLI_f8479fc6-e48e-429e-ac2a-6fb4bc07d9c2",
+  :data_pagamento #inst "2022-05-30T22:00:00.000-00:00",
+  :data_debitore nil,
+  :id "FAT_057c17f8-f8bc-430a-b2eb-ed16c2480b3b",
+  :data_emissione #inst "2022-01-30T23:00:00.000-00:00",
+  :data_scadenza #inst "2022-05-30T22:00:00.000-00:00",
+  :importo 2309797}
+ {:sellers_id "SELL1c2dd604-d3a1-43e2-bb66-66ee283e91f6",
+  :numero "210002767\\FE",
+  :data_default nil,
+  :cedenti_id "CED_cdb928b8-68d3-4770-bbf6-287e6e67b90f",
+  :clienti_id "CLI_d58ce2ef-ae9d-4cbb-bc09-d4c06355388f",
+  :data_pagamento #inst "2022-05-24T22:00:00.000-00:00",
+  :data_debitore nil,
+  :id "FAT_4cb43821-f261-4f3f-940b-d48913f16bae",
+  :data_emissione #inst "2021-12-22T23:00:00.000-00:00",
+  :data_scadenza #inst "2022-05-24T22:00:00.000-00:00",
+  :importo 5117070}
+ {:sellers_id "SELL1c2dd604-d3a1-43e2-bb66-66ee283e91f6",
+  :numero "210002843\\FE",
+  :data_default nil,
+  :cedenti_id "CED_a9a2df56-8607-4858-b308-4e3333c38dde",
+  :clienti_id "CLI_cd194577-9ea0-456c-882c-fe4950e0350d",
+  :data_pagamento #inst "2022-05-24T22:00:00.000-00:00",
+  :data_debitore nil,
+  :id "FAT_0e34edeb-6648-4ebe-ab2d-5d867fa75650",
+  :data_emissione #inst "2021-12-29T23:00:00.000-00:00",
+  :data_scadenza #inst "2022-05-24T22:00:00.000-00:00",
+  :importo 2749143}
+ {:sellers_id "SELL8161b598-a04a-4657-9bf9-7db44af2ea5f",
+  :numero "453 FD",
+  :data_default nil,
+  :cedenti_id "CED_524f2c16-ffde-4d3c-8cd0-3a6f6216a752",
+  :clienti_id "CLI_7822c941-d1b8-41db-a5da-6ee3a609f56b",
+  :data_pagamento #inst "2022-06-29T22:00:00.000-00:00",
+  :data_debitore nil,
+  :id "FAT_033e284e-c38f-48be-9201-d1e49c0e12e5",
+  :data_emissione #inst "2021-12-30T23:00:00.000-00:00",
+  :data_scadenza #inst "2022-06-29T22:00:00.000-00:00",
+  :importo 9714600}
+ {:sellers_id "SELL1c2dd604-d3a1-43e2-bb66-66ee283e91f6",
+  :numero "210002883\\FE",
+  :data_default nil,
+  :cedenti_id "CED_32f42182-becc-4f92-ab40-2d78992f0816",
+  :clienti_id "CLI_ab4f126e-f98e-41fa-b260-c889dfc2ba5b",
+  :data_pagamento #inst "2022-05-24T22:00:00.000-00:00",
+  :data_debitore nil,
+  :id "FAT_7c2d2a95-15fd-495e-af7e-bf3dc5862c98",
+  :data_emissione #inst "2021-12-30T23:00:00.000-00:00",
+  :data_scadenza #inst "2022-05-24T22:00:00.000-00:00",
+  :importo 2692857}
+ {:sellers_id "SELLc71ecab5-c602-4131-ae7c-0583e9689a29",
+  :numero "881",
+  :data_default nil,
+  :cedenti_id "CED_ee5605a7-f769-45ac-a2ce-346b7e293c61",
+  :clienti_id "CLI_cb70370b-2e6c-42d7-a481-89f82c7589b3",
+  :data_pagamento #inst "2022-06-29T22:00:00.000-00:00",
+  :data_debitore nil,
+  :id "FAT_c40c5747-0014-4032-845c-4726c93720c3",
+  :data_emissione #inst "2021-12-30T23:00:00.000-00:00",
+  :data_scadenza #inst "2022-06-29T22:00:00.000-00:00",
+  :importo 3170380}
+ {:sellers_id "SELL1b780fc9-5cf5-47c5-ad39-bdb052bdfb5e",
+  :numero "27 FB",
+  :data_default nil,
+  :cedenti_id "CED_3d26e3e8-50ae-4de8-bc03-1e4b9d2ba9d6",
+  :clienti_id "CLI_d2185bff-25a2-4a43-a7c2-c14756e7a164",
+  :data_pagamento #inst "2022-06-29T22:00:00.000-00:00",
+  :data_debitore nil,
+  :id "FAT_64dbf5e7-24e2-4d49-961c-8cea36564027",
+  :data_emissione #inst "2021-12-30T23:00:00.000-00:00",
+  :data_scadenza #inst "2022-06-29T22:00:00.000-00:00",
+  :importo 5977302}
+ {:sellers_id "SELL96a87e94-9779-40ea-bf97-c75b5200bcb5",
+  :numero "388 FD",
+  :data_default nil,
+  :cedenti_id "CED_53c12762-55c7-4cac-b048-53f0dfde66e6",
+  :clienti_id "CLI_55ced1c8-e6a4-45fa-81b9-f141bfb8ab86",
+  :data_pagamento #inst "2022-06-29T22:00:00.000-00:00",
+  :data_debitore nil,
+  :id "FAT_07c5d89f-158e-4cc9-b7c1-63b743565418",
+  :data_emissione #inst "2021-12-30T23:00:00.000-00:00",
+  :data_scadenza #inst "2022-06-29T22:00:00.000-00:00",
+  :importo 7475000}
+ ...)
+clj꞉winvoice.query꞉> 
+()
+clj꞉winvoice.query꞉> 
+#'winvoice.query/get-invoice-amount-anticipata
+clj꞉winvoice.query꞉> 
+()
+clj꞉winvoice.query꞉> 
+#'winvoice.query/get-invoice-amount-anticipata
+clj꞉winvoice.query꞉> 
+()
+clj꞉winvoice.query꞉> 
+#'winvoice.query/get-invoice-amount-anticipata
+clj꞉winvoice.query꞉> 
+()
+clj꞉winvoice.query꞉> 
+({:fatture.data_scadenza 2320276}
+ {:fatture.data_scadenza 1229258}
+ {:fatture.data_scadenza 8723000}
+ {:fatture.data_scadenza 28920294}
+ {:fatture.data_scadenza 3111461}
+ {:fatture.data_scadenza 4546700}
+ {:fatture.data_scadenza 4451200}
+ {:fatture.data_scadenza 1805200}
+ {:fatture.data_scadenza 2468489}
+ {:fatture.data_scadenza 2771831}
+ {:fatture.data_scadenza 1718426}
+ {:fatture.data_scadenza 6235225}
+ {:fatture.data_scadenza 40565000}
+ {:fatture.data_scadenza 2559200}
+ {:fatture.data_scadenza 11319950}
+ {:fatture.data_scadenza 28495909}
+ {:fatture.data_scadenza 3430199}
+ {:fatture.data_scadenza 12180750}
+ {:fatture.data_scadenza 23204800}
+ {:fatture.data_scadenza 1337100}
+ {:fatture.data_scadenza 31727053}
+ {:fatture.data_scadenza 7894850}
+ {:fatture.data_scadenza 2275907}
+ {:fatture.data_scadenza 6489700}
+ {:fatture.data_scadenza 6413200}
+ {:fatture.data_scadenza 10344900}
+ {:fatture.data_scadenza 18760200}
+ {:fatture.data_scadenza 4149473}
+ {:fatture.data_scadenza 12341200}
+ {:fatture.data_scadenza 3665486}
+ {:fatture.data_scadenza 32425965}
+ {:fatture.data_scadenza 35416100}
+ {:fatture.data_scadenza 446518}
+ {:fatture.data_scadenza 2528639}
+ {:fatture.data_scadenza 13204250}
+ {:fatture.data_scadenza 3278179}
+ {:fatture.data_scadenza 9470000}
+ {:fatture.data_scadenza 5083200}
+ {:fatture.data_scadenza 26269035}
+ {:fatture.data_scadenza 2313457}
+ {:fatture.data_scadenza 27577853}
+ {:fatture.data_scadenza 517195}
+ {:fatture.data_scadenza 2309797}
+ {:fatture.data_scadenza 5117070}
+ {:fatture.data_scadenza 2749143}
+ {:fatture.data_scadenza 9714600}
+ {:fatture.data_scadenza 2692857}
+ {:fatture.data_scadenza 3170380}
+ {:fatture.data_scadenza 5977302}
+ {:fatture.data_scadenza 7475000}
+ ...)
+clj꞉winvoice.query꞉> 
+({:importo 2320276, :data_scadenza #inst "2022-06-29T22:00:00.000-00:00"}
+ {:importo 1229258, :data_scadenza #inst "2022-06-29T22:00:00.000-00:00"}
+ {:importo 8723000, :data_scadenza #inst "2022-06-29T22:00:00.000-00:00"}
+ {:importo 28920294, :data_scadenza #inst "2022-06-29T22:00:00.000-00:00"}
+ {:importo 3111461, :data_scadenza #inst "2022-06-29T22:00:00.000-00:00"}
+ {:importo 4546700, :data_scadenza #inst "2022-05-30T22:00:00.000-00:00"}
+ {:importo 4451200, :data_scadenza #inst "2022-05-30T22:00:00.000-00:00"}
+ {:importo 1805200, :data_scadenza #inst "2022-05-30T22:00:00.000-00:00"}
+ {:importo 2468489, :data_scadenza #inst "2022-06-29T22:00:00.000-00:00"}
+ {:importo 2771831, :data_scadenza #inst "2022-06-29T22:00:00.000-00:00"}
+ {:importo 1718426, :data_scadenza #inst "2022-06-29T22:00:00.000-00:00"}
+ {:importo 6235225, :data_scadenza #inst "2022-06-29T22:00:00.000-00:00"}
+ {:importo 40565000, :data_scadenza #inst "2022-05-30T22:00:00.000-00:00"}
+ {:importo 2559200, :data_scadenza #inst "2022-06-29T22:00:00.000-00:00"}
+ {:importo 11319950, :data_scadenza #inst "2022-06-29T22:00:00.000-00:00"}
+ {:importo 28495909, :data_scadenza #inst "2022-06-29T22:00:00.000-00:00"}
+ {:importo 3430199, :data_scadenza #inst "2022-06-29T22:00:00.000-00:00"}
+ {:importo 12180750, :data_scadenza #inst "2022-06-29T22:00:00.000-00:00"}
+ {:importo 23204800, :data_scadenza #inst "2022-06-29T22:00:00.000-00:00"}
+ {:importo 1337100, :data_scadenza #inst "2022-06-29T22:00:00.000-00:00"}
+ {:importo 31727053, :data_scadenza #inst "2022-06-29T22:00:00.000-00:00"}
+ {:importo 7894850, :data_scadenza #inst "2022-06-29T22:00:00.000-00:00"}
+ {:importo 2275907, :data_scadenza #inst "2022-06-29T22:00:00.000-00:00"}
+ {:importo 6489700, :data_scadenza #inst "2022-06-29T22:00:00.000-00:00"}
+ {:importo 6413200, :data_scadenza #inst "2022-06-29T22:00:00.000-00:00"}
+ {:importo 10344900, :data_scadenza #inst "2022-06-29T22:00:00.000-00:00"}
+ {:importo 18760200, :data_scadenza #inst "2022-06-29T22:00:00.000-00:00"}
+ {:importo 4149473, :data_scadenza #inst "2022-06-29T22:00:00.000-00:00"}
+ {:importo 12341200, :data_scadenza #inst "2022-06-29T22:00:00.000-00:00"}
+ {:importo 3665486, :data_scadenza #inst "2022-06-29T22:00:00.000-00:00"}
+ {:importo 32425965, :data_scadenza #inst "2022-06-29T22:00:00.000-00:00"}
+ {:importo 35416100, :data_scadenza #inst "2022-06-29T22:00:00.000-00:00"}
+ {:importo 446518, :data_scadenza #inst "2022-05-30T22:00:00.000-00:00"}
+ {:importo 2528639, :data_scadenza #inst "2022-06-29T22:00:00.000-00:00"}
+ {:importo 13204250, :data_scadenza #inst "2022-06-29T22:00:00.000-00:00"}
+ {:importo 3278179, :data_scadenza #inst "2022-07-30T22:00:00.000-00:00"}
+ {:importo 9470000, :data_scadenza #inst "2022-07-30T22:00:00.000-00:00"}
+ {:importo 5083200, :data_scadenza #inst "2022-07-30T22:00:00.000-00:00"}
+ {:importo 26269035, :data_scadenza #inst "2022-07-30T22:00:00.000-00:00"}
+ {:importo 2313457, :data_scadenza #inst "2022-07-30T22:00:00.000-00:00"}
+ {:importo 27577853, :data_scadenza #inst "2022-07-30T22:00:00.000-00:00"}
+ {:importo 517195, :data_scadenza #inst "2022-05-30T22:00:00.000-00:00"}
+ {:importo 2309797, :data_scadenza #inst "2022-05-30T22:00:00.000-00:00"}
+ {:importo 5117070, :data_scadenza #inst "2022-05-24T22:00:00.000-00:00"}
+ {:importo 2749143, :data_scadenza #inst "2022-05-24T22:00:00.000-00:00"}
+ {:importo 9714600, :data_scadenza #inst "2022-06-29T22:00:00.000-00:00"}
+ {:importo 2692857, :data_scadenza #inst "2022-05-24T22:00:00.000-00:00"}
+ {:importo 3170380, :data_scadenza #inst "2022-06-29T22:00:00.000-00:00"}
+ {:importo 5977302, :data_scadenza #inst "2022-06-29T22:00:00.000-00:00"}
+ {:importo 7475000, :data_scadenza #inst "2022-06-29T22:00:00.000-00:00"}
+ ...)
+clj꞉winvoice.query꞉> 
+#'winvoice.query/get-invoice-amount-anticipata
+clj꞉winvoice.query꞉> 
+()
+clj꞉winvoice.query꞉> 
+#'winvoice.query/get-invoice-amount-anticipata
+clj꞉winvoice.query꞉> 
+()
+clj꞉winvoice.query꞉> 
+#'winvoice.query/get-invoice-amount-anticipata
+clj꞉winvoice.query꞉> 
+()
+clj꞉winvoice.query꞉> 
+()
+clj꞉winvoice.query꞉> 
+#'winvoice.query/get-invoice-amount-anticipata
+clj꞉winvoice.query꞉> 
+({:sellers_id "SELL1b780fc9-5cf5-47c5-ad39-bdb052bdfb5e",
+  :numero "548 FD",
+  :data_default nil,
+  :cedenti_id "CED_471a1180-7b38-4b20-a979-48a39a214308",
+  :clienti_id "CLI_5be8fe0b-8bfa-43f2-807f-dab45806217a",
+  :data_pagamento #inst "2022-06-29T22:00:00.000-00:00",
+  :data_debitore nil,
+  :id "FAT_02743338-2a20-41b7-974a-d3b19e988f15",
+  :data_emissione #inst "2021-12-14T23:00:00.000-00:00",
+  :data_scadenza #inst "2022-06-29T22:00:00.000-00:00",
+  :importo 2320276}
+ {:sellers_id "SELL8161b598-a04a-4657-9bf9-7db44af2ea5f",
+  :numero "415 FD",
+  :data_default nil,
+  :cedenti_id "CED_7643aaf6-928d-485b-add8-27f1e7892f4a",
+  :clienti_id "CLI_f714643b-68e1-4356-a3ec-09db8d79041e",
+  :data_pagamento #inst "2022-06-29T22:00:00.000-00:00",
+  :data_debitore nil,
+  :id "FAT_6404ec69-4bc0-4038-abd4-8dd7deec67e2",
+  :data_emissione #inst "2021-12-14T23:00:00.000-00:00",
+  :data_scadenza #inst "2022-06-29T22:00:00.000-00:00",
+  :importo 1229258}
+ {:sellers_id "SELL99a0ec94-6ef7-4eea-8aca-83e93a622a71",
+  :numero "520 FD",
+  :data_default nil,
+  :cedenti_id "CED_61135592-3ea7-4fac-b06d-d4a11ba7996d",
+  :clienti_id "CLI_6cd2036c-5a13-4dbb-8359-3ec50ddbf533",
+  :data_pagamento #inst "2022-06-29T22:00:00.000-00:00",
+  :data_debitore nil,
+  :id "FAT_4cb14276-0b41-4785-8e7a-0bd0a9476dbd",
+  :data_emissione #inst "2021-12-14T23:00:00.000-00:00",
+  :data_scadenza #inst "2022-06-29T22:00:00.000-00:00",
+  :importo 8723000}
+ {:sellers_id "SELL8161b598-a04a-4657-9bf9-7db44af2ea5f",
+  :numero "414 FD",
+  :data_default nil,
+  :cedenti_id "CED_9d649458-2286-42dd-ae16-0ad5b72fe2b8",
+  :clienti_id "CLI_bfb69528-e71d-4bb9-834f-911f9bdb80fe",
+  :data_pagamento #inst "2022-06-29T22:00:00.000-00:00",
+  :data_debitore nil,
+  :id "FAT_aeb9eb78-22cc-4010-8da7-bd93607c64b4",
+  :data_emissione #inst "2021-12-14T23:00:00.000-00:00",
+  :data_scadenza #inst "2022-06-29T22:00:00.000-00:00",
+  :importo 28920294}
+ {:sellers_id "SELL01a3c70d-1d82-4aa0-a9dd-45ad2800ed85",
+  :numero "253 FD",
+  :data_default nil,
+  :cedenti_id "CED_3ce6d487-4fdf-4707-9d48-bde6866d7b6e",
+  :clienti_id "CLI_cc68093c-b9dc-42a5-99a4-6d23a7aa4bb2",
+  :data_pagamento #inst "2022-06-29T22:00:00.000-00:00",
+  :data_debitore nil,
+  :id "FAT_a21d8673-ba0d-4f1c-94a8-56bf49ae72fd",
+  :data_emissione #inst "2021-12-14T23:00:00.000-00:00",
+  :data_scadenza #inst "2022-06-29T22:00:00.000-00:00",
+  :importo 3111461}
+ {:sellers_id "SELLc553b820-2a1c-448f-a55a-1b65949bc0b3",
+  :numero "80",
+  :data_default nil,
+  :cedenti_id "CED_71941355-d0e2-40e4-b8c8-4ff435496886",
+  :clienti_id "CLI_97eacc06-2646-4a17-8dce-b896bea7b632",
+  :data_pagamento #inst "2022-05-30T22:00:00.000-00:00",
+  :data_debitore nil,
+  :id "FAT_9fd622af-ced9-48a9-a857-fff7f781224a",
+  :data_emissione #inst "2021-11-29T23:00:00.000-00:00",
+  :data_scadenza #inst "2022-05-30T22:00:00.000-00:00",
+  :importo 4546700}
+ {:sellers_id "SELLc553b820-2a1c-448f-a55a-1b65949bc0b3",
+  :numero "122",
+  :data_default nil,
+  :cedenti_id "CED_9ac72184-5623-42d4-8e7e-ee65dd038f37",
+  :clienti_id "CLI_a532f491-1c09-4c70-8ad9-e2f33c3e7606",
+  :data_pagamento #inst "2022-05-30T22:00:00.000-00:00",
+  :data_debitore nil,
+  :id "FAT_60591d1f-dc1e-42cd-966d-b37a34629b16",
+  :data_emissione #inst "2021-11-29T23:00:00.000-00:00",
+  :data_scadenza #inst "2022-05-30T22:00:00.000-00:00",
+  :importo 4451200}
+ {:sellers_id "SELL13214926-8bef-4805-ad2b-0d36e64d9852",
+  :numero "84",
+  :data_default nil,
+  :cedenti_id "CED_e19f93bb-cc5f-4b1f-80bc-aedf83862207",
+  :clienti_id "CLI_abab17b9-0b01-41d9-b56e-3f1f6e0b4ba5",
+  :data_pagamento #inst "2022-05-30T22:00:00.000-00:00",
+  :data_debitore nil,
+  :id "FAT_46c22652-2806-4955-a7e6-7b0c0ae46362",
+  :data_emissione #inst "2021-11-29T23:00:00.000-00:00",
+  :data_scadenza #inst "2022-05-30T22:00:00.000-00:00",
+  :importo 1805200}
+ {:sellers_id "SELL99a0ec94-6ef7-4eea-8aca-83e93a622a71",
+  :numero "39",
+  :data_default nil,
+  :cedenti_id "CED_37436dd5-cc67-4d46-9b3c-ac6ca42452f1",
+  :clienti_id "CLI_902b605e-11dd-4712-a78c-c2d49451997d",
+  :data_pagamento #inst "2022-06-29T22:00:00.000-00:00",
+  :data_debitore nil,
+  :id "FAT_b659b394-665d-41a5-a224-c8b12360d45e",
+  :data_emissione #inst "2021-11-30T23:00:00.000-00:00",
+  :data_scadenza #inst "2022-06-29T22:00:00.000-00:00",
+  :importo 2468489}
+ {:sellers_id "SELL8161b598-a04a-4657-9bf9-7db44af2ea5f",
+  :numero "54 FB",
+  :data_default nil,
+  :cedenti_id "CED_449f7042-7818-4cd3-b6ac-63b32836d7b4",
+  :clienti_id "CLI_7f80fdf4-601b-4939-932b-71bb749be1ef",
+  :data_pagamento #inst "2022-06-29T22:00:00.000-00:00",
+  :data_debitore nil,
+  :id "FAT_75382109-76b1-4271-996e-1bd5e1e31709",
+  :data_emissione #inst "2021-11-30T23:00:00.000-00:00",
+  :data_scadenza #inst "2022-06-29T22:00:00.000-00:00",
+  :importo 2771831}
+ {:sellers_id "SELL96a87e94-9779-40ea-bf97-c75b5200bcb5",
+  :numero "191FB",
+  :data_default nil,
+  :cedenti_id "CED_3c6abe38-3bd3-45c2-bd5c-67695b9ce64c",
+  :clienti_id "CLI_3e3a3209-af3a-4fe2-9cb3-9c6c744a195b",
+  :data_pagamento #inst "2022-06-29T22:00:00.000-00:00",
+  :data_debitore nil,
+  :id "FAT_e7b98db7-57c3-48ea-959a-f4f81f6f05db",
+  :data_emissione #inst "2021-11-30T23:00:00.000-00:00",
+  :data_scadenza #inst "2022-06-29T22:00:00.000-00:00",
+  :importo 1718426}
+ {:sellers_id "SELL1b780fc9-5cf5-47c5-ad39-bdb052bdfb5e",
+  :numero "24 FB",
+  :data_default nil,
+  :cedenti_id "CED_cf8e3d7e-1f88-48f8-bd97-4283769c17fd",
+  :clienti_id "CLI_fa876981-b21a-4dd7-83da-9f30a068f8e9",
+  :data_pagamento #inst "2022-06-29T22:00:00.000-00:00",
+  :data_debitore nil,
+  :id "FAT_d431db4a-32d6-476e-9b08-5579b44cc503",
+  :data_emissione #inst "2021-11-30T23:00:00.000-00:00",
+  :data_scadenza #inst "2022-06-29T22:00:00.000-00:00",
+  :importo 6235225}
+ {:sellers_id "SELL2601e91d-5f3a-4823-9ac5-111b520f26a4",
+  :numero "191/VE",
+  :data_default nil,
+  :cedenti_id "CED_6ad31118-beb9-47af-9306-fcfab491d9e8",
+  :clienti_id "CLI_00b68821-5bd3-4cfc-8ab8-2beb4a0a1722",
+  :data_pagamento #inst "2022-05-30T22:00:00.000-00:00",
+  :data_debitore nil,
+  :id "FAT_ee0ef115-2566-4ce7-a768-671f60919bb5",
+  :data_emissione #inst "2021-11-15T23:00:00.000-00:00",
+  :data_scadenza #inst "2022-05-30T22:00:00.000-00:00",
+  :importo 40565000}
+ {:sellers_id "SELLc71ecab5-c602-4131-ae7c-0583e9689a29",
+  :numero "880",
+  :data_default nil,
+  :cedenti_id "CED_acc9eeb6-b336-493e-97dc-26927e82c3f9",
+  :clienti_id "CLI_273ad17e-efab-4b82-a117-bca11422c5f0",
+  :data_pagamento #inst "2022-06-29T22:00:00.000-00:00",
+  :data_debitore nil,
+  :id "FAT_89030358-4158-4018-9878-495a4903a306",
+  :data_emissione #inst "2021-12-30T23:00:00.000-00:00",
+  :data_scadenza #inst "2022-06-29T22:00:00.000-00:00",
+  :importo 2559200}
+ {:sellers_id "SELLc71ecab5-c602-4131-ae7c-0583e9689a29",
+  :numero "871 FD",
+  :data_default nil,
+  :cedenti_id "CED_6ff3bbc5-a594-4df9-97d2-58cb49612ecc",
+  :clienti_id "CLI_6295e6b9-cb33-4e82-8358-040bd114dbf1",
+  :data_pagamento #inst "2022-06-29T22:00:00.000-00:00",
+  :data_debitore nil,
+  :id "FAT_4892ab57-32ed-4a16-97b8-5ce120a3dba0",
+  :data_emissione #inst "2021-12-30T23:00:00.000-00:00",
+  :data_scadenza #inst "2022-06-29T22:00:00.000-00:00",
+  :importo 11319950}
+ {:sellers_id "SELL8161b598-a04a-4657-9bf9-7db44af2ea5f",
+  :numero "450 FD",
+  :data_default nil,
+  :cedenti_id "CED_c8518082-76ac-4bce-9625-1ea2d53405b8",
+  :clienti_id "CLI_e4460c81-3387-4a9e-bbd7-ab15f421f09d",
+  :data_pagamento #inst "2022-06-29T22:00:00.000-00:00",
+  :data_debitore nil,
+  :id "FAT_6b5aaa68-b457-4bc6-8f47-6124350bf2df",
+  :data_emissione #inst "2021-12-30T23:00:00.000-00:00",
+  :data_scadenza #inst "2022-06-29T22:00:00.000-00:00",
+  :importo 28495909}
+ {:sellers_id "SELL99a0ec94-6ef7-4eea-8aca-83e93a622a71",
+  :numero "555",
+  :data_default nil,
+  :cedenti_id "CED_86c703aa-0d5f-4a78-abda-fd8e5b79e577",
+  :clienti_id "CLI_05a1a8ce-107d-45a7-bfda-ead52bac142e",
+  :data_pagamento #inst "2022-06-29T22:00:00.000-00:00",
+  :data_debitore nil,
+  :id "FAT_1f94b058-cccd-4b76-9a50-4fbdf67e517a",
+  :data_emissione #inst "2021-12-30T23:00:00.000-00:00",
+  :data_scadenza #inst "2022-06-29T22:00:00.000-00:00",
+  :importo 3430199}
+ {:sellers_id "SELL99a0ec94-6ef7-4eea-8aca-83e93a622a71",
+  :numero "549 FD",
+  :data_default nil,
+  :cedenti_id "CED_1691488b-263c-4de2-9bac-5ab1b7ee62fa",
+  :clienti_id "CLI_a16f61fa-2d46-46c1-b0df-0c287d36b678",
+  :data_pagamento #inst "2022-06-29T22:00:00.000-00:00",
+  :data_debitore nil,
+  :id "FAT_d439adf0-4ccb-44e5-a315-14476450c6dc",
+  :data_emissione #inst "2021-12-30T23:00:00.000-00:00",
+  :data_scadenza #inst "2022-06-29T22:00:00.000-00:00",
+  :importo 12180750}
+ {:sellers_id "SELL99a0ec94-6ef7-4eea-8aca-83e93a622a71",
+  :numero "553",
+  :data_default nil,
+  :cedenti_id "CED_0fc7a2b6-0786-4fc0-a8a4-e46b2a996bd4",
+  :clienti_id "CLI_68a00906-c8e5-4218-9f99-6b4466d6797a",
+  :data_pagamento #inst "2022-06-29T22:00:00.000-00:00",
+  :data_debitore nil,
+  :id "FAT_0fa0e123-7938-4dd0-8265-fcb5cc633f48",
+  :data_emissione #inst "2021-12-30T23:00:00.000-00:00",
+  :data_scadenza #inst "2022-06-29T22:00:00.000-00:00",
+  :importo 23204800}
+ {:sellers_id "SELL99a0ec94-6ef7-4eea-8aca-83e93a622a71",
+  :numero "554",
+  :data_default nil,
+  :cedenti_id "CED_85e4ea38-9145-4496-aee3-7179a0867ff4",
+  :clienti_id "CLI_efe0240f-388f-4740-b365-c81d096ecf4b",
+  :data_pagamento #inst "2022-06-29T22:00:00.000-00:00",
+  :data_debitore nil,
+  :id "FAT_25a53ed5-298b-49ab-a6fe-55d6dd6cc998",
+  :data_emissione #inst "2021-12-30T23:00:00.000-00:00",
+  :data_scadenza #inst "2022-06-29T22:00:00.000-00:00",
+  :importo 1337100}
+ {:sellers_id "SELL1b780fc9-5cf5-47c5-ad39-bdb052bdfb5e",
+  :numero "586 FD",
+  :data_default nil,
+  :cedenti_id "CED_a6060926-dbb9-4e0d-9fb5-48547b8baade",
+  :clienti_id "CLI_8eb1509d-dd5f-4a43-9cfc-e915ba19445a",
+  :data_pagamento #inst "2022-06-29T22:00:00.000-00:00",
+  :data_debitore nil,
+  :id "FAT_bc4b7079-473c-4f54-ae14-b07dedc09220",
+  :data_emissione #inst "2021-12-30T23:00:00.000-00:00",
+  :data_scadenza #inst "2022-06-29T22:00:00.000-00:00",
+  :importo 31727053}
+ {:sellers_id "SELL99a0ec94-6ef7-4eea-8aca-83e93a622a71",
+  :numero "540 FD",
+  :data_default nil,
+  :cedenti_id "CED_6f0dfce7-eb1a-4595-bec8-3424f3327536",
+  :clienti_id "CLI_a7dc2d80-da1c-4e99-9786-a0b9ac3f82ab",
+  :data_pagamento #inst "2022-06-29T22:00:00.000-00:00",
+  :data_debitore nil,
+  :id "FAT_8b6ac647-a38d-420a-aa77-3514f7be4ef0",
+  :data_emissione #inst "2021-12-30T23:00:00.000-00:00",
+  :data_scadenza #inst "2022-06-29T22:00:00.000-00:00",
+  :importo 7894850}
+ {:sellers_id "SELL8161b598-a04a-4657-9bf9-7db44af2ea5f",
+  :numero "57 FB",
+  :data_default nil,
+  :cedenti_id "CED_b2548566-c0c5-449a-9bd8-59c7a71e442b",
+  :clienti_id "CLI_3cea8655-6a9e-4700-8573-ebbb622981e7",
+  :data_pagamento #inst "2022-06-29T22:00:00.000-00:00",
+  :data_debitore nil,
+  :id "FAT_3b67b2dd-4f6e-4957-8e7a-d703721b2331",
+  :data_emissione #inst "2021-12-30T23:00:00.000-00:00",
+  :data_scadenza #inst "2022-06-29T22:00:00.000-00:00",
+  :importo 2275907}
+ {:sellers_id "SELLc553b820-2a1c-448f-a55a-1b65949bc0b3",
+  :numero "144",
+  :data_default nil,
+  :cedenti_id "CED_83f0a604-3c4f-4cf8-88f1-d171c4d78b8a",
+  :clienti_id "CLI_795f5385-91c9-4483-bbc9-1ea2128d252d",
+  :data_pagamento #inst "2022-06-29T22:00:00.000-00:00",
+  :data_debitore nil,
+  :id "FAT_11fb6b4b-8c52-421e-9859-68d2f00ea1d6",
+  :data_emissione #inst "2021-12-30T23:00:00.000-00:00",
+  :data_scadenza #inst "2022-06-29T22:00:00.000-00:00",
+  :importo 6489700}
+ {:sellers_id "SELLc553b820-2a1c-448f-a55a-1b65949bc0b3",
+  :numero "91",
+  :data_default nil,
+  :cedenti_id "CED_a2b21103-1772-4c18-a4f6-24c80921baaf",
+  :clienti_id "CLI_e1c62f48-e4bd-4cda-8997-d69a751cb9f3",
+  :data_pagamento #inst "2022-06-29T22:00:00.000-00:00",
+  :data_debitore nil,
+  :id "FAT_78077ec6-2c67-4af7-a68e-9a1464e18477",
+  :data_emissione #inst "2021-12-30T23:00:00.000-00:00",
+  :data_scadenza #inst "2022-06-29T22:00:00.000-00:00",
+  :importo 6413200}
+ {:sellers_id "SELL8161b598-a04a-4657-9bf9-7db44af2ea5f",
+  :numero "455",
+  :data_default nil,
+  :cedenti_id "CED_87ee13b2-d220-4e80-80c7-5fb4cb642cf0",
+  :clienti_id "CLI_293314d2-af58-4307-bcfd-644db4c041d3",
+  :data_pagamento #inst "2022-06-29T22:00:00.000-00:00",
+  :data_debitore nil,
+  :id "FAT_0b472324-2ed3-46f8-a519-c6cc58681a13",
+  :data_emissione #inst "2021-12-30T23:00:00.000-00:00",
+  :data_scadenza #inst "2022-06-29T22:00:00.000-00:00",
+  :importo 10344900}
+ {:sellers_id "SELL96a87e94-9779-40ea-bf97-c75b5200bcb5",
+  :numero "391",
+  :data_default nil,
+  :cedenti_id "CED_688e8d2a-722e-4cc5-b871-2fbe5d6b5ce0",
+  :clienti_id "CLI_2b051655-8e1c-48b7-a894-9f068835ff56",
+  :data_pagamento #inst "2022-06-29T22:00:00.000-00:00",
+  :data_debitore nil,
+  :id "FAT_50ebfd5a-0682-4a6d-be87-9d0887c811f5",
+  :data_emissione #inst "2021-12-30T23:00:00.000-00:00",
+  :data_scadenza #inst "2022-06-29T22:00:00.000-00:00",
+  :importo 18760200}
+ {:sellers_id "SELL96a87e94-9779-40ea-bf97-c75b5200bcb5",
+  :numero "393",
+  :data_default nil,
+  :cedenti_id "CED_4df7ebe5-a1c1-4a13-92a3-210af9f2e6bd",
+  :clienti_id "CLI_36ad02d1-ccef-49f3-8c22-0d99060e5fb0",
+  :data_pagamento #inst "2022-06-29T22:00:00.000-00:00",
+  :data_debitore nil,
+  :id "FAT_0fea1e24-a797-4f9b-87ae-8ea751a293be",
+  :data_emissione #inst "2021-12-30T23:00:00.000-00:00",
+  :data_scadenza #inst "2022-06-29T22:00:00.000-00:00",
+  :importo 4149473}
+ {:sellers_id "SELL01a3c70d-1d82-4aa0-a9dd-45ad2800ed85",
+  :numero "268 FD",
+  :data_default nil,
+  :cedenti_id "CED_17131051-480b-4a4b-9242-9d81d7e4cad2",
+  :clienti_id "CLI_755edf55-9291-4a71-a943-201ca880d4d3",
+  :data_pagamento #inst "2022-06-29T22:00:00.000-00:00",
+  :data_debitore nil,
+  :id "FAT_598bdc23-268e-41fb-8ca6-c0cdc0bc691a",
+  :data_emissione #inst "2021-12-30T23:00:00.000-00:00",
+  :data_scadenza #inst "2022-06-29T22:00:00.000-00:00",
+  :importo 12341200}
+ {:sellers_id "SELL01a3c70d-1d82-4aa0-a9dd-45ad2800ed85",
+  :numero "266 FD",
+  :data_default nil,
+  :cedenti_id "CED_d9c9797c-04e1-46aa-a073-6a678cf17d37",
+  :clienti_id "CLI_e1df9882-f1e6-4c89-a542-f0de02065d57",
+  :data_pagamento #inst "2022-06-29T22:00:00.000-00:00",
+  :data_debitore nil,
+  :id "FAT_b9c42a3f-4f28-4a19-b448-b070f249651c",
+  :data_emissione #inst "2021-12-30T23:00:00.000-00:00",
+  :data_scadenza #inst "2022-06-29T22:00:00.000-00:00",
+  :importo 3665486}
+ {:sellers_id "SELL1b780fc9-5cf5-47c5-ad39-bdb052bdfb5e",
+  :numero "547 FD",
+  :data_default nil,
+  :cedenti_id "CED_a22ef884-070c-4017-882d-5709e28ea00a",
+  :clienti_id "CLI_d0267c35-1809-4b52-9e80-2efb46517998",
+  :data_pagamento #inst "2022-06-29T22:00:00.000-00:00",
+  :data_debitore nil,
+  :id "FAT_63a531ad-755b-4730-8473-47346a9ee597",
+  :data_emissione #inst "2021-12-14T23:00:00.000-00:00",
+  :data_scadenza #inst "2022-06-29T22:00:00.000-00:00",
+  :importo 32425965}
+ {:sellers_id "SELLc71ecab5-c602-4131-ae7c-0583e9689a29",
+  :numero "879",
+  :data_default nil,
+  :cedenti_id "CED_a6821122-9e73-4995-aed3-25b29b7b5044",
+  :clienti_id "CLI_56e3c1c9-e75b-41e3-9cf9-1929ea4737a2",
+  :data_pagamento #inst "2022-06-29T22:00:00.000-00:00",
+  :data_debitore nil,
+  :id "FAT_dd2795e7-1bde-4ef3-8a09-7ce4ffa761ac",
+  :data_emissione #inst "2021-12-30T23:00:00.000-00:00",
+  :data_scadenza #inst "2022-06-29T22:00:00.000-00:00",
+  :importo 35416100}
+ {:sellers_id "SELL1ee99618-0bbf-4229-9e51-c3d831b2906c",
+  :numero "51/00070",
+  :data_default nil,
+  :cedenti_id "CED_a785d7fc-28a5-4481-a712-0445b96dd738",
+  :clienti_id "CLI_6ad7e31e-675e-4a30-8c62-ffa20a468669",
+  :data_pagamento #inst "2022-05-30T22:00:00.000-00:00",
+  :data_debitore nil,
+  :id "FAT_49493c5b-5c87-46c4-8cea-f76f24e969ab",
+  :data_emissione #inst "2022-01-13T23:00:00.000-00:00",
+  :data_scadenza #inst "2022-05-30T22:00:00.000-00:00",
+  :importo 446518}
+ {:sellers_id "SELL1b780fc9-5cf5-47c5-ad39-bdb052bdfb5e",
+  :numero "587 FD",
+  :data_default nil,
+  :cedenti_id "CED_219ced7c-f2f0-4ded-89ac-715549148fdf",
+  :clienti_id "CLI_07deaeda-1547-47c4-b729-1d674ecfaad5",
+  :data_pagamento #inst "2022-06-29T22:00:00.000-00:00",
+  :data_debitore nil,
+  :id "FAT_7bcd2939-8fed-4a19-8fbe-a67fd98c63d5",
+  :data_emissione #inst "2021-12-30T23:00:00.000-00:00",
+  :data_scadenza #inst "2022-06-29T22:00:00.000-00:00",
+  :importo 2528639}
+ {:sellers_id "SELL13214926-8bef-4805-ad2b-0d36e64d9852",
+  :numero "92 FD",
+  :data_default nil,
+  :cedenti_id "CED_3b0d51f1-25f0-46da-b2ee-c363398f91cb",
+  :clienti_id "CLI_fe1040db-5ab4-419a-9574-2b9053fa8f83",
+  :data_pagamento #inst "2022-06-29T22:00:00.000-00:00",
+  :data_debitore nil,
+  :id "FAT_7c8c09d0-2b56-46fe-858d-398925d52cc5",
+  :data_emissione #inst "2021-12-30T23:00:00.000-00:00",
+  :data_scadenza #inst "2022-06-29T22:00:00.000-00:00",
+  :importo 13204250}
+ {:sellers_id "SELL01a3c70d-1d82-4aa0-a9dd-45ad2800ed85",
+  :numero "3 FD",
+  :data_default nil,
+  :cedenti_id "CED_25a774df-ed4d-4223-8fa6-48d86a5112ba",
+  :clienti_id "CLI_4b7736ec-00ce-4541-8581-29a91e9187c7",
+  :data_pagamento #inst "2022-07-30T22:00:00.000-00:00",
+  :data_debitore nil,
+  :id "FAT_f716287c-71c4-40a9-9b09-590058bd59b5",
+  :data_emissione #inst "2022-01-14T23:00:00.000-00:00",
+  :data_scadenza #inst "2022-07-30T22:00:00.000-00:00",
+  :importo 3278179}
+ {:sellers_id "SELL99a0ec94-6ef7-4eea-8aca-83e93a622a71",
+  :numero "4 FD",
+  :data_default nil,
+  :cedenti_id "CED_a6cf24a4-d965-4258-8429-08f7593aab21",
+  :clienti_id "CLI_b6c48962-dcc0-4d1f-a169-848ca734ea85",
+  :data_pagamento #inst "2022-07-30T22:00:00.000-00:00",
+  :data_debitore nil,
+  :id "FAT_cfc48713-0d83-460f-b307-8604181adee6",
+  :data_emissione #inst "2022-01-14T23:00:00.000-00:00",
+  :data_scadenza #inst "2022-07-30T22:00:00.000-00:00",
+  :importo 9470000}
+ {:sellers_id "SELL8161b598-a04a-4657-9bf9-7db44af2ea5f",
+  :numero "12 FD",
+  :data_default nil,
+  :cedenti_id "CED_f194724a-75ca-4eae-b399-832a1dd65dcd",
+  :clienti_id "CLI_09850e59-9ebc-4c6d-b075-d0c251dedde6",
+  :data_pagamento #inst "2022-07-30T22:00:00.000-00:00",
+  :data_debitore nil,
+  :id "FAT_9df42f93-ca30-47f7-b8ce-3edf7ca45454",
+  :data_emissione #inst "2022-01-14T23:00:00.000-00:00",
+  :data_scadenza #inst "2022-07-30T22:00:00.000-00:00",
+  :importo 5083200}
+ {:sellers_id "SELL8161b598-a04a-4657-9bf9-7db44af2ea5f",
+  :numero "1 FD",
+  :data_default nil,
+  :cedenti_id "CED_99cc4ba3-c8a8-4138-94d1-53197f178b57",
+  :clienti_id "CLI_e2d1c51c-6949-457f-b6c2-cac3336ca52e",
+  :data_pagamento #inst "2022-07-30T22:00:00.000-00:00",
+  :data_debitore nil,
+  :id "FAT_6e03d96e-d422-4b84-bc65-94d2c43bee9d",
+  :data_emissione #inst "2022-01-14T23:00:00.000-00:00",
+  :data_scadenza #inst "2022-07-30T22:00:00.000-00:00",
+  :importo 26269035}
+ {:sellers_id "SELL1b780fc9-5cf5-47c5-ad39-bdb052bdfb5e",
+  :numero "18 FD",
+  :data_default nil,
+  :cedenti_id "CED_f7169e81-a2e3-43a4-be3e-f20218d63dba",
+  :clienti_id "CLI_ea447cec-1c3f-4eeb-b9cb-b44bf9b64302",
+  :data_pagamento #inst "2022-07-30T22:00:00.000-00:00",
+  :data_debitore nil,
+  :id "FAT_422d734c-e3f1-4815-abf6-696fc451cb8d",
+  :data_emissione #inst "2022-01-14T23:00:00.000-00:00",
+  :data_scadenza #inst "2022-07-30T22:00:00.000-00:00",
+  :importo 2313457}
+ {:sellers_id "SELL1b780fc9-5cf5-47c5-ad39-bdb052bdfb5e",
+  :numero "17 FD",
+  :data_default nil,
+  :cedenti_id "CED_6e94e86b-218a-453c-8147-ceb406104585",
+  :clienti_id "CLI_72f01aba-0496-478d-95f4-64f382985ee4",
+  :data_pagamento #inst "2022-07-30T22:00:00.000-00:00",
+  :data_debitore nil,
+  :id "FAT_0c6f4962-b355-49cb-a9a1-5357aeda1d54",
+  :data_emissione #inst "2022-01-14T23:00:00.000-00:00",
+  :data_scadenza #inst "2022-07-30T22:00:00.000-00:00",
+  :importo 27577853}
+ {:sellers_id "SELL1ee99618-0bbf-4229-9e51-c3d831b2906c",
+  :numero "51/00166",
+  :data_default nil,
+  :cedenti_id "CED_2544b014-abf1-446d-a635-13100be11d91",
+  :clienti_id "CLI_2cbb7327-568a-4ce9-8ba2-676b19aa5b67",
+  :data_pagamento #inst "2022-05-30T22:00:00.000-00:00",
+  :data_debitore nil,
+  :id "FAT_f8e73421-be56-41a9-afca-d5063c2670d9",
+  :data_emissione #inst "2022-01-27T23:00:00.000-00:00",
+  :data_scadenza #inst "2022-05-30T22:00:00.000-00:00",
+  :importo 517195}
+ {:sellers_id "SELL0b39c2f2-d6a4-4893-959d-96aee7a5055d",
+  :numero "10",
+  :data_default nil,
+  :cedenti_id "CED_44ae488a-6266-40a6-83b3-40b614d52e43",
+  :clienti_id "CLI_f8479fc6-e48e-429e-ac2a-6fb4bc07d9c2",
+  :data_pagamento #inst "2022-05-30T22:00:00.000-00:00",
+  :data_debitore nil,
+  :id "FAT_057c17f8-f8bc-430a-b2eb-ed16c2480b3b",
+  :data_emissione #inst "2022-01-30T23:00:00.000-00:00",
+  :data_scadenza #inst "2022-05-30T22:00:00.000-00:00",
+  :importo 2309797}
+ {:sellers_id "SELL1c2dd604-d3a1-43e2-bb66-66ee283e91f6",
+  :numero "210002767\\FE",
+  :data_default nil,
+  :cedenti_id "CED_cdb928b8-68d3-4770-bbf6-287e6e67b90f",
+  :clienti_id "CLI_d58ce2ef-ae9d-4cbb-bc09-d4c06355388f",
+  :data_pagamento #inst "2022-05-24T22:00:00.000-00:00",
+  :data_debitore nil,
+  :id "FAT_4cb43821-f261-4f3f-940b-d48913f16bae",
+  :data_emissione #inst "2021-12-22T23:00:00.000-00:00",
+  :data_scadenza #inst "2022-05-24T22:00:00.000-00:00",
+  :importo 5117070}
+ {:sellers_id "SELL1c2dd604-d3a1-43e2-bb66-66ee283e91f6",
+  :numero "210002843\\FE",
+  :data_default nil,
+  :cedenti_id "CED_a9a2df56-8607-4858-b308-4e3333c38dde",
+  :clienti_id "CLI_cd194577-9ea0-456c-882c-fe4950e0350d",
+  :data_pagamento #inst "2022-05-24T22:00:00.000-00:00",
+  :data_debitore nil,
+  :id "FAT_0e34edeb-6648-4ebe-ab2d-5d867fa75650",
+  :data_emissione #inst "2021-12-29T23:00:00.000-00:00",
+  :data_scadenza #inst "2022-05-24T22:00:00.000-00:00",
+  :importo 2749143}
+ {:sellers_id "SELL8161b598-a04a-4657-9bf9-7db44af2ea5f",
+  :numero "453 FD",
+  :data_default nil,
+  :cedenti_id "CED_524f2c16-ffde-4d3c-8cd0-3a6f6216a752",
+  :clienti_id "CLI_7822c941-d1b8-41db-a5da-6ee3a609f56b",
+  :data_pagamento #inst "2022-06-29T22:00:00.000-00:00",
+  :data_debitore nil,
+  :id "FAT_033e284e-c38f-48be-9201-d1e49c0e12e5",
+  :data_emissione #inst "2021-12-30T23:00:00.000-00:00",
+  :data_scadenza #inst "2022-06-29T22:00:00.000-00:00",
+  :importo 9714600}
+ {:sellers_id "SELL1c2dd604-d3a1-43e2-bb66-66ee283e91f6",
+  :numero "210002883\\FE",
+  :data_default nil,
+  :cedenti_id "CED_32f42182-becc-4f92-ab40-2d78992f0816",
+  :clienti_id "CLI_ab4f126e-f98e-41fa-b260-c889dfc2ba5b",
+  :data_pagamento #inst "2022-05-24T22:00:00.000-00:00",
+  :data_debitore nil,
+  :id "FAT_7c2d2a95-15fd-495e-af7e-bf3dc5862c98",
+  :data_emissione #inst "2021-12-30T23:00:00.000-00:00",
+  :data_scadenza #inst "2022-05-24T22:00:00.000-00:00",
+  :importo 2692857}
+ {:sellers_id "SELLc71ecab5-c602-4131-ae7c-0583e9689a29",
+  :numero "881",
+  :data_default nil,
+  :cedenti_id "CED_ee5605a7-f769-45ac-a2ce-346b7e293c61",
+  :clienti_id "CLI_cb70370b-2e6c-42d7-a481-89f82c7589b3",
+  :data_pagamento #inst "2022-06-29T22:00:00.000-00:00",
+  :data_debitore nil,
+  :id "FAT_c40c5747-0014-4032-845c-4726c93720c3",
+  :data_emissione #inst "2021-12-30T23:00:00.000-00:00",
+  :data_scadenza #inst "2022-06-29T22:00:00.000-00:00",
+  :importo 3170380}
+ {:sellers_id "SELL1b780fc9-5cf5-47c5-ad39-bdb052bdfb5e",
+  :numero "27 FB",
+  :data_default nil,
+  :cedenti_id "CED_3d26e3e8-50ae-4de8-bc03-1e4b9d2ba9d6",
+  :clienti_id "CLI_d2185bff-25a2-4a43-a7c2-c14756e7a164",
+  :data_pagamento #inst "2022-06-29T22:00:00.000-00:00",
+  :data_debitore nil,
+  :id "FAT_64dbf5e7-24e2-4d49-961c-8cea36564027",
+  :data_emissione #inst "2021-12-30T23:00:00.000-00:00",
+  :data_scadenza #inst "2022-06-29T22:00:00.000-00:00",
+  :importo 5977302}
+ {:sellers_id "SELL96a87e94-9779-40ea-bf97-c75b5200bcb5",
+  :numero "388 FD",
+  :data_default nil,
+  :cedenti_id "CED_53c12762-55c7-4cac-b048-53f0dfde66e6",
+  :clienti_id "CLI_55ced1c8-e6a4-45fa-81b9-f141bfb8ab86",
+  :data_pagamento #inst "2022-06-29T22:00:00.000-00:00",
+  :data_debitore nil,
+  :id "FAT_07c5d89f-158e-4cc9-b7c1-63b743565418",
+  :data_emissione #inst "2021-12-30T23:00:00.000-00:00",
+  :data_scadenza #inst "2022-06-29T22:00:00.000-00:00",
+  :importo 7475000}
+ ...)
+clj꞉winvoice.query꞉> 
+#'winvoice.query/get-invoice-amount-anticipata
+clj꞉winvoice.query꞉> 
+({:importo 2320276, :data_scadenza #inst "2022-06-29T22:00:00.000-00:00"}
+ {:importo 1229258, :data_scadenza #inst "2022-06-29T22:00:00.000-00:00"}
+ {:importo 8723000, :data_scadenza #inst "2022-06-29T22:00:00.000-00:00"}
+ {:importo 28920294, :data_scadenza #inst "2022-06-29T22:00:00.000-00:00"}
+ {:importo 3111461, :data_scadenza #inst "2022-06-29T22:00:00.000-00:00"}
+ {:importo 4546700, :data_scadenza #inst "2022-05-30T22:00:00.000-00:00"}
+ {:importo 4451200, :data_scadenza #inst "2022-05-30T22:00:00.000-00:00"}
+ {:importo 1805200, :data_scadenza #inst "2022-05-30T22:00:00.000-00:00"}
+ {:importo 2468489, :data_scadenza #inst "2022-06-29T22:00:00.000-00:00"}
+ {:importo 2771831, :data_scadenza #inst "2022-06-29T22:00:00.000-00:00"}
+ {:importo 1718426, :data_scadenza #inst "2022-06-29T22:00:00.000-00:00"}
+ {:importo 6235225, :data_scadenza #inst "2022-06-29T22:00:00.000-00:00"}
+ {:importo 40565000, :data_scadenza #inst "2022-05-30T22:00:00.000-00:00"}
+ {:importo 2559200, :data_scadenza #inst "2022-06-29T22:00:00.000-00:00"}
+ {:importo 11319950, :data_scadenza #inst "2022-06-29T22:00:00.000-00:00"}
+ {:importo 28495909, :data_scadenza #inst "2022-06-29T22:00:00.000-00:00"}
+ {:importo 3430199, :data_scadenza #inst "2022-06-29T22:00:00.000-00:00"}
+ {:importo 12180750, :data_scadenza #inst "2022-06-29T22:00:00.000-00:00"}
+ {:importo 23204800, :data_scadenza #inst "2022-06-29T22:00:00.000-00:00"}
+ {:importo 1337100, :data_scadenza #inst "2022-06-29T22:00:00.000-00:00"}
+ {:importo 31727053, :data_scadenza #inst "2022-06-29T22:00:00.000-00:00"}
+ {:importo 7894850, :data_scadenza #inst "2022-06-29T22:00:00.000-00:00"}
+ {:importo 2275907, :data_scadenza #inst "2022-06-29T22:00:00.000-00:00"}
+ {:importo 6489700, :data_scadenza #inst "2022-06-29T22:00:00.000-00:00"}
+ {:importo 6413200, :data_scadenza #inst "2022-06-29T22:00:00.000-00:00"}
+ {:importo 10344900, :data_scadenza #inst "2022-06-29T22:00:00.000-00:00"}
+ {:importo 18760200, :data_scadenza #inst "2022-06-29T22:00:00.000-00:00"}
+ {:importo 4149473, :data_scadenza #inst "2022-06-29T22:00:00.000-00:00"}
+ {:importo 12341200, :data_scadenza #inst "2022-06-29T22:00:00.000-00:00"}
+ {:importo 3665486, :data_scadenza #inst "2022-06-29T22:00:00.000-00:00"}
+ {:importo 32425965, :data_scadenza #inst "2022-06-29T22:00:00.000-00:00"}
+ {:importo 35416100, :data_scadenza #inst "2022-06-29T22:00:00.000-00:00"}
+ {:importo 446518, :data_scadenza #inst "2022-05-30T22:00:00.000-00:00"}
+ {:importo 2528639, :data_scadenza #inst "2022-06-29T22:00:00.000-00:00"}
+ {:importo 13204250, :data_scadenza #inst "2022-06-29T22:00:00.000-00:00"}
+ {:importo 3278179, :data_scadenza #inst "2022-07-30T22:00:00.000-00:00"}
+ {:importo 9470000, :data_scadenza #inst "2022-07-30T22:00:00.000-00:00"}
+ {:importo 5083200, :data_scadenza #inst "2022-07-30T22:00:00.000-00:00"}
+ {:importo 26269035, :data_scadenza #inst "2022-07-30T22:00:00.000-00:00"}
+ {:importo 2313457, :data_scadenza #inst "2022-07-30T22:00:00.000-00:00"}
+ {:importo 27577853, :data_scadenza #inst "2022-07-30T22:00:00.000-00:00"}
+ {:importo 517195, :data_scadenza #inst "2022-05-30T22:00:00.000-00:00"}
+ {:importo 2309797, :data_scadenza #inst "2022-05-30T22:00:00.000-00:00"}
+ {:importo 5117070, :data_scadenza #inst "2022-05-24T22:00:00.000-00:00"}
+ {:importo 2749143, :data_scadenza #inst "2022-05-24T22:00:00.000-00:00"}
+ {:importo 9714600, :data_scadenza #inst "2022-06-29T22:00:00.000-00:00"}
+ {:importo 2692857, :data_scadenza #inst "2022-05-24T22:00:00.000-00:00"}
+ {:importo 3170380, :data_scadenza #inst "2022-06-29T22:00:00.000-00:00"}
+ {:importo 5977302, :data_scadenza #inst "2022-06-29T22:00:00.000-00:00"}
+ {:importo 7475000, :data_scadenza #inst "2022-06-29T22:00:00.000-00:00"}
+ ...)
+clj꞉winvoice.query꞉> 
+#'winvoice.query/invoice-in-range
+clj꞉winvoice.query꞉> 
+; Syntax error compiling at (c:\Users\user\winvoice\src\winvoice\query.clj:141:1).
+; Unable to resolve symbol: select in this context
+clj꞉winvoice.query꞉> 
+; Syntax error compiling at (c:\Users\user\winvoice\src\winvoice\query.clj:141:1).
+; Unable to resolve symbol: select in this context
+clj꞉winvoice.query꞉> 
+nil
+; WARNING: update already refers to: #'clojure.core/update in namespace: winvoice.query, being replaced by: #'korma.core/update
+clj꞉winvoice.query꞉> 
+({:sellers_id "SELLbfdf62a6-d106-443d-bb04-c8f48bc672f5",
+  :numero "46313/GAS",
+  :data_default nil,
+  :cedenti_id "CED_17b12ae4-9d6d-47c0-acfe-a0fef34b47af",
+  :clienti_id "CLI_cf95a7f9-7f3c-48e9-a8e5-a9af65ff5aec",
+  :data_pagamento #inst "2021-11-28T23:00:00.000-00:00",
+  :data_debitore nil,
+  :id "FAT_fcb9fd06-8bb4-4ccb-ae11-cdf82bde9426",
+  :data_emissione #inst "2021-11-03T23:00:00.000-00:00",
+  :data_scadenza #inst "2021-11-28T23:00:00.000-00:00",
+  :importo 1842}
+ {:sellers_id "SELLbfdf62a6-d106-443d-bb04-c8f48bc672f5",
+  :numero "46252/GAS",
+  :data_default nil,
+  :cedenti_id "CED_29cfe133-d94d-431a-93fa-ec48884c3393",
+  :clienti_id "CLI_46933fbb-d148-471b-9427-16606af26afc",
+  :data_pagamento #inst "2021-12-08T23:00:00.000-00:00",
+  :data_debitore #inst "2021-12-22T16:21:57.000000000-00:00",
+  :id "FAT_b9039063-f233-48fa-90f0-a3ec67428743",
+  :data_emissione #inst "2021-11-03T23:00:00.000-00:00",
+  :data_scadenza #inst "2021-12-08T23:00:00.000-00:00",
+  :importo 288}
+ {:sellers_id "SELLbfdf62a6-d106-443d-bb04-c8f48bc672f5",
+  :numero "46254/GAS",
+  :data_default nil,
+  :cedenti_id "CED_316eef08-ab8e-4633-83a6-d4211f5dcd60",
+  :clienti_id "CLI_1fb7b5bb-aaec-42b4-b6de-3756dfd55c92",
+  :data_pagamento #inst "2021-12-08T23:00:00.000-00:00",
+  :data_debitore #inst "2021-12-22T16:23:49.000000000-00:00",
+  :id "FAT_10c838fe-5133-4fa3-8c01-e4272e947f7f",
+  :data_emissione #inst "2021-11-03T23:00:00.000-00:00",
+  :data_scadenza #inst "2021-12-08T23:00:00.000-00:00",
+  :importo 323}
+ {:sellers_id "SELLbfdf62a6-d106-443d-bb04-c8f48bc672f5",
+  :numero "46255/GAS",
+  :data_default nil,
+  :cedenti_id "CED_471c296d-2ed5-4b8e-874f-07cfd5c8b458",
+  :clienti_id "CLI_d916aa3b-e7a3-4811-90c3-abc4c32007ee",
+  :data_pagamento #inst "2021-12-08T23:00:00.000-00:00",
+  :data_debitore #inst "2021-12-22T16:24:30.000000000-00:00",
+  :id "FAT_92b51c96-c8aa-4c3e-9057-c1b5a948c1c9",
+  :data_emissione #inst "2021-11-03T23:00:00.000-00:00",
+  :data_scadenza #inst "2021-12-08T23:00:00.000-00:00",
+  :importo 567}
+ {:sellers_id "SELLbfdf62a6-d106-443d-bb04-c8f48bc672f5",
+  :numero "46316/GAS",
+  :data_default nil,
+  :cedenti_id "CED_5d9c0399-9d22-4dc1-a684-e80a14e360ed",
+  :clienti_id "CLI_6bd4850b-cdb4-4d80-8a14-8b09fa9afe6b",
+  :data_pagamento #inst "2021-11-28T23:00:00.000-00:00",
+  :data_debitore nil,
+  :id "FAT_3e70a5ab-578d-42a0-9bea-c06c973da2b8",
+  :data_emissione #inst "2021-11-03T23:00:00.000-00:00",
+  :data_scadenza #inst "2021-11-28T23:00:00.000-00:00",
+  :importo 824}
+ {:sellers_id "SELLbfdf62a6-d106-443d-bb04-c8f48bc672f5",
+  :numero "46317/GAS",
+  :data_default nil,
+  :cedenti_id "CED_6c38ceb9-63d4-4693-85c6-165e53d64339",
+  :clienti_id "CLI_d0ff5a9d-7e15-453b-b613-67ba56257a9f",
+  :data_pagamento #inst "2021-11-28T23:00:00.000-00:00",
+  :data_debitore nil,
+  :id "FAT_e8023454-23bb-4519-99fc-a334e8c1f6b4",
+  :data_emissione #inst "2021-11-03T23:00:00.000-00:00",
+  :data_scadenza #inst "2021-11-28T23:00:00.000-00:00",
+  :importo 1584}
+ {:sellers_id "SELLbfdf62a6-d106-443d-bb04-c8f48bc672f5",
+  :numero "46310/GAS",
+  :data_default nil,
+  :cedenti_id "CED_2618e3ac-f281-4134-bf4e-a7315655516a",
+  :clienti_id "CLI_f7ed387f-5a92-4b37-a79f-e0cf1fab65eb",
+  :data_pagamento #inst "2021-11-28T23:00:00.000-00:00",
+  :data_debitore nil,
+  :id "FAT_237bbea5-a03b-41a7-b8fc-03db2868e724",
+  :data_emissione #inst "2021-11-03T23:00:00.000-00:00",
+  :data_scadenza #inst "2021-11-28T23:00:00.000-00:00",
+  :importo 576}
+ {:sellers_id "SELLbfdf62a6-d106-443d-bb04-c8f48bc672f5",
+  :numero "85219/EE",
+  :data_default nil,
+  :cedenti_id "CED_c8d0d469-5b75-4916-b07d-2e1aae4e9c13",
+  :clienti_id "CLI_2636d589-570c-480a-8506-43b84be1c751",
+  :data_pagamento #inst "2021-11-29T23:00:00.000-00:00",
+  :data_debitore #inst "2021-12-01T09:24:51.000000000-00:00",
+  :id "FAT_eb458478-9579-4415-9770-07f1e0335ad4",
+  :data_emissione #inst "2021-11-03T23:00:00.000-00:00",
+  :data_scadenza #inst "2021-11-29T23:00:00.000-00:00",
+  :importo 1730}
+ {:sellers_id "SELLbfdf62a6-d106-443d-bb04-c8f48bc672f5",
+  :numero "46251/GAS",
+  :data_default nil,
+  :cedenti_id "CED_067d1435-0760-4b27-8025-6c7fed998a72",
+  :clienti_id "CLI_d5b201d2-7545-4c0d-935a-7adc5d971d8c",
+  :data_pagamento #inst "2021-12-08T23:00:00.000-00:00",
+  :data_debitore #inst "2021-12-22T16:25:22.000000000-00:00",
+  :id "FAT_2f81782f-566b-481b-80bb-26551115488b",
+  :data_emissione #inst "2021-11-03T23:00:00.000-00:00",
+  :data_scadenza #inst "2021-12-08T23:00:00.000-00:00",
+  :importo 660}
+ {:sellers_id "SELLbfdf62a6-d106-443d-bb04-c8f48bc672f5",
+  :numero "46250/GAS",
+  :data_default nil,
+  :cedenti_id "CED_c59ab774-cac3-4810-b6bc-52a8c8841d6d",
+  :clienti_id "CLI_4c77f619-7a76-465a-b04f-cac2c2ed058b",
+  :data_pagamento #inst "2021-12-08T23:00:00.000-00:00",
+  :data_debitore #inst "2021-12-22T16:25:53.000000000-00:00",
+  :id "FAT_f9bfb417-1a2f-49f7-8158-b863ac4b38e9",
+  :data_emissione #inst "2021-11-03T23:00:00.000-00:00",
+  :data_scadenza #inst "2021-12-08T23:00:00.000-00:00",
+  :importo 1290}
+ {:sellers_id "SELLbfdf62a6-d106-443d-bb04-c8f48bc672f5",
+  :numero "46261/GAS",
+  :data_default nil,
+  :cedenti_id "CED_6ac8d91a-e4ce-4809-bb4e-b18e0024d181",
+  :clienti_id "CLI_e1c7378e-e7a2-4c12-962a-da0121cf56ac",
+  :data_pagamento #inst "2021-12-08T23:00:00.000-00:00",
+  :data_debitore #inst "2021-12-22T16:22:55.000000000-00:00",
+  :id "FAT_7b64ed0a-06fd-423c-ad4a-4327b847d850",
+  :data_emissione #inst "2021-11-03T23:00:00.000-00:00",
+  :data_scadenza #inst "2021-12-08T23:00:00.000-00:00",
+  :importo 288}
+ {:sellers_id "SELLbfdf62a6-d106-443d-bb04-c8f48bc672f5",
+  :numero "46253/GAS",
+  :data_default nil,
+  :cedenti_id "CED_e70134a1-233b-4e03-bfda-002f125a6397",
+  :clienti_id "CLI_3d4fcb8f-d822-4936-a6e0-2ecb1fcc4ca0",
+  :data_pagamento #inst "2021-12-08T23:00:00.000-00:00",
+  :data_debitore #inst "2021-12-22T16:23:21.000000000-00:00",
+  :id "FAT_266626ec-e4a9-42a1-a92e-02d19cfe7649",
+  :data_emissione #inst "2021-11-03T23:00:00.000-00:00",
+  :data_scadenza #inst "2021-12-08T23:00:00.000-00:00",
+  :importo 288}
+ {:sellers_id "SELLbfdf62a6-d106-443d-bb04-c8f48bc672f5",
+  :numero "85149/EE",
+  :data_default nil,
+  :cedenti_id "CED_0f92c26b-0834-4f97-a649-8dbc0cd4757b",
+  :clienti_id "CLI_ce8fadfe-8945-47f9-9700-4c6d3c39b45c",
+  :data_pagamento #inst "2021-12-14T23:00:00.000-00:00",
+  :data_debitore #inst "2021-12-16T09:42:42.000000000-00:00",
+  :id "FAT_47f80bf4-147c-48d6-b5b7-720be6faa096",
+  :data_emissione #inst "2021-11-03T23:00:00.000-00:00",
+  :data_scadenza #inst "2021-12-14T23:00:00.000-00:00",
+  :importo 640}
+ {:sellers_id "SELLbfdf62a6-d106-443d-bb04-c8f48bc672f5",
+  :numero "85167/EE",
+  :data_default nil,
+  :cedenti_id "CED_b66deca7-536b-4cfe-a541-35da9eeed816",
+  :clienti_id "CLI_55daa67a-9ca1-4c1f-9587-cee76e25b846",
+  :data_pagamento #inst "2021-12-30T23:00:00.000-00:00",
+  :data_debitore #inst "2022-01-07T11:44:07.000000000-00:00",
+  :id "FAT_d7c1242f-db69-4ac3-bc29-f2112018367b",
+  :data_emissione #inst "2021-11-03T23:00:00.000-00:00",
+  :data_scadenza #inst "2021-12-30T23:00:00.000-00:00",
+  :importo 1747}
+ {:sellers_id "SELL897710ce-6963-42f7-884c-cb191160f467",
+  :numero "920",
+  :data_default nil,
+  :cedenti_id "CED_762e9833-6c55-4457-b7cf-2bb47d0bbbd3",
+  :clienti_id "CLI_6cc13276-4af5-4aa0-b19c-a193f2558a1b",
+  :data_pagamento #inst "2020-04-29T22:00:00.000-00:00",
+  :data_debitore #inst "2020-05-12T00:00:00.000000000-00:00",
+  :id "FAT_57a53f50-393a-470a-b9d7-e9a4a9b475ac",
+  :data_emissione #inst "2020-02-26T23:00:00.000-00:00",
+  :data_scadenza #inst "2020-04-29T22:00:00.000-00:00",
+  :importo 721}
+ {:sellers_id "SELL897710ce-6963-42f7-884c-cb191160f467",
+  :numero "507",
+  :data_default nil,
+  :cedenti_id "CED_304d2ade-911f-4389-bb66-7029f9a67926",
+  :clienti_id "CLI_87e387e8-21e5-46b2-9ed9-25fa74783200",
+  :data_pagamento #inst "2020-03-30T22:00:00.000-00:00",
+  :data_debitore #inst "2020-04-07T00:00:00.000000000-00:00",
+  :id "FAT_6ce003fe-fcf2-4156-90e6-5999760f99ad",
+  :data_emissione #inst "2020-01-30T23:00:00.000-00:00",
+  :data_scadenza #inst "2020-03-30T22:00:00.000-00:00",
+  :importo 1680}
+ {:sellers_id "SELL897710ce-6963-42f7-884c-cb191160f467",
+  :numero "2809",
+  :data_default nil,
+  :cedenti_id "CED_fa3b167e-c5e7-474d-b6d3-440cc4100813",
+  :clienti_id "CLI_fdbada06-2fa3-4359-8a8d-4172ffd1c0fe",
+  :data_pagamento #inst "2020-07-30T22:00:00.000-00:00",
+  :data_debitore #inst "2020-08-06T00:00:00.000000000-00:00",
+  :id "FAT_4fff8055-3fef-4381-9c93-8291a474e3f0",
+  :data_emissione #inst "2020-05-30T22:00:00.000-00:00",
+  :data_scadenza #inst "2020-07-30T22:00:00.000-00:00",
+  :importo 1780}
+ {:sellers_id "SELL897710ce-6963-42f7-884c-cb191160f467",
+  :numero "583",
+  :data_default nil,
+  :cedenti_id "CED_f76daa31-0586-4c04-a6b0-2a3b4839ffd7",
+  :clienti_id "CLI_558dec62-c6f7-4b0f-b771-dd16ecedbbb0",
+  :data_pagamento #inst "2020-03-30T22:00:00.000-00:00",
+  :data_debitore #inst "2020-04-07T00:00:00.000000000-00:00",
+  :id "FAT_8775f4f5-c9c7-4204-853b-5b2c2b5f8558",
+  :data_emissione #inst "2020-01-30T23:00:00.000-00:00",
+  :data_scadenza #inst "2020-03-30T22:00:00.000-00:00",
+  :importo 1708}
+ {:sellers_id "SELL897710ce-6963-42f7-884c-cb191160f467",
+  :numero "548",
+  :data_default nil,
+  :cedenti_id "CED_14512cfd-702b-4680-9f25-f99bc24745fa",
+  :clienti_id "CLI_1a956367-5899-40f1-95c2-077fc4088586",
+  :data_pagamento #inst "2020-03-30T22:00:00.000-00:00",
+  :data_debitore #inst "2020-04-07T00:00:00.000000000-00:00",
+  :id "FAT_b5650241-5294-4fbe-bda7-960bb16bc6cc",
+  :data_emissione #inst "2020-01-30T23:00:00.000-00:00",
+  :data_scadenza #inst "2020-03-30T22:00:00.000-00:00",
+  :importo 715}
+ {:sellers_id "SELL897710ce-6963-42f7-884c-cb191160f467",
+  :numero "7045",
+  :data_default nil,
+  :cedenti_id "CED_2a945494-48ea-4ebf-861d-43e543d9f648",
+  :clienti_id "CLI_3213c9a9-2667-4a28-8f29-c5b5d2020e7b",
+  :data_pagamento #inst "2020-02-28T23:00:00.000-00:00",
+  :data_debitore #inst "2020-03-12T00:00:00.000000000-00:00",
+  :id "FAT_38c19e4b-33ee-48f6-8bce-9c3f17fe361f",
+  :data_emissione #inst "2019-12-30T23:00:00.000-00:00",
+  :data_scadenza #inst "2020-02-28T23:00:00.000-00:00",
+  :importo 1537}
+ {:sellers_id "SELL897710ce-6963-42f7-884c-cb191160f467",
+  :numero "3286",
+  :data_default nil,
+  :cedenti_id "CED_b74ca372-e31c-429b-8d4e-ca45b2f34ac9",
+  :clienti_id "CLI_f64750c5-e23f-4cc0-b2c9-301e94342e20",
+  :data_pagamento #inst "2020-08-30T22:00:00.000-00:00",
+  :data_debitore #inst "2020-09-10T00:00:00.000000000-00:00",
+  :id "FAT_548c49b9-6317-45ac-8f96-e26f25b1b0f8",
+  :data_emissione #inst "2020-06-28T22:00:00.000-00:00",
+  :data_scadenza #inst "2020-08-30T22:00:00.000-00:00",
+  :importo 439}
+ {:sellers_id "SELL897710ce-6963-42f7-884c-cb191160f467",
+  :numero "3395",
+  :data_default nil,
+  :cedenti_id "CED_900c0fb6-bc0e-4f6b-8d0d-570998a0cc1a",
+  :clienti_id "CLI_f12c44e4-7467-445a-8d8a-dd95cca489ca",
+  :data_pagamento #inst "2020-08-30T22:00:00.000-00:00",
+  :data_debitore #inst "2020-09-10T00:00:00.000000000-00:00",
+  :id "FAT_da41bbdf-292c-4877-8e4b-eed722d97a58",
+  :data_emissione #inst "2020-06-29T22:00:00.000-00:00",
+  :data_scadenza #inst "2020-08-30T22:00:00.000-00:00",
+  :importo 1220}
+ {:sellers_id "SELL897710ce-6963-42f7-884c-cb191160f467",
+  :numero "2947",
+  :data_default nil,
+  :cedenti_id "CED_651f4aed-a47d-443c-a039-a2fb65adc086",
+  :clienti_id "CLI_9fbd695f-dea7-4171-8692-cc8d62e6540c",
+  :data_pagamento #inst "2020-07-30T22:00:00.000-00:00",
+  :data_debitore #inst "2020-08-06T00:00:00.000000000-00:00",
+  :id "FAT_bf16fe1b-ec41-46e4-9b5b-f549afaae8e1",
+  :data_emissione #inst "2020-05-30T22:00:00.000-00:00",
+  :data_scadenza #inst "2020-07-30T22:00:00.000-00:00",
+  :importo 904}
+ {:sellers_id "SELL897710ce-6963-42f7-884c-cb191160f467",
+  :numero "7021",
+  :data_default nil,
+  :cedenti_id "CED_30e07bbc-b818-4b53-b40c-cf3e06152b08",
+  :clienti_id "CLI_cc5b4707-846f-4ae5-b056-9b32b8e04b5b",
+  :data_pagamento #inst "2020-02-28T23:00:00.000-00:00",
+  :data_debitore #inst "2020-03-12T00:00:00.000000000-00:00",
+  :id "FAT_c030f759-589c-4bbd-a897-5d596d489301",
+  :data_emissione #inst "2019-12-30T23:00:00.000-00:00",
+  :data_scadenza #inst "2020-02-28T23:00:00.000-00:00",
+  :importo 1610}
+ {:sellers_id "SELL897710ce-6963-42f7-884c-cb191160f467",
+  :numero "3287",
+  :data_default nil,
+  :cedenti_id "CED_e5cf410b-8d91-4c46-a0ab-25ea1f41840e",
+  :clienti_id "CLI_c75dc618-6806-48ee-9355-84bec6fdcc04",
+  :data_pagamento #inst "2020-08-30T22:00:00.000-00:00",
+  :data_debitore #inst "2020-09-10T00:00:00.000000000-00:00",
+  :id "FAT_0e14241d-3808-4342-8861-31bdf54a6239",
+  :data_emissione #inst "2020-06-28T22:00:00.000-00:00",
+  :data_scadenza #inst "2020-08-30T22:00:00.000-00:00",
+  :importo 1684}
+ {:sellers_id "SELL897710ce-6963-42f7-884c-cb191160f467",
+  :numero "6495",
+  :data_default nil,
+  :cedenti_id "CED_227cae66-6416-4c3b-87d2-66ed90769473",
+  :clienti_id "CLI_eed2cd7b-8f04-4349-a1cd-64e4293b3f56",
+  :data_pagamento #inst "2020-01-30T23:00:00.000-00:00",
+  :data_debitore #inst "2020-02-07T00:00:00.000000000-00:00",
+  :id "FAT_c7cbc71e-1a5c-447d-83a8-31e205d99300",
+  :data_emissione #inst "2019-11-29T23:00:00.000-00:00",
+  :data_scadenza #inst "2020-01-30T23:00:00.000-00:00",
+  :importo 1425}
+ {:sellers_id "SELL897710ce-6963-42f7-884c-cb191160f467",
+  :numero "327",
+  :data_default nil,
+  :cedenti_id "CED_d68ace06-5d3c-4a51-82a1-030de28fef00",
+  :clienti_id "CLI_82729b5f-2d41-4645-9d29-ce6c598a7d9d",
+  :data_pagamento #inst "2020-03-30T22:00:00.000-00:00",
+  :data_debitore #inst "2020-04-07T00:00:00.000000000-00:00",
+  :id "FAT_5a46e37f-fff9-40e1-8d45-c9510cf0011f",
+  :data_emissione #inst "2020-01-30T23:00:00.000-00:00",
+  :data_scadenza #inst "2020-03-30T22:00:00.000-00:00",
+  :importo 1257}
+ {:sellers_id "SELL897710ce-6963-42f7-884c-cb191160f467",
+  :numero "314",
+  :data_default nil,
+  :cedenti_id "CED_1b391abd-fb7a-464f-a366-9ede55e892e3",
+  :clienti_id "CLI_1922ff79-4bb9-42fb-bc4c-d52cdb51a2c1",
+  :data_pagamento #inst "2020-03-30T22:00:00.000-00:00",
+  :data_debitore #inst "2020-04-07T00:00:00.000000000-00:00",
+  :id "FAT_b54ca9c9-89e7-413f-b2ff-65ab4ff6037b",
+  :data_emissione #inst "2020-01-30T23:00:00.000-00:00",
+  :data_scadenza #inst "2020-03-30T22:00:00.000-00:00",
+  :importo 1815}
+ {:sellers_id "SELL897710ce-6963-42f7-884c-cb191160f467",
+  :numero "2805",
+  :data_default nil,
+  :cedenti_id "CED_1357348d-93cf-44ee-a0ee-e0406111a9df",
+  :clienti_id "CLI_2ca0539f-5239-4eed-b4bd-ce430440f008",
+  :data_pagamento #inst "2020-07-30T22:00:00.000-00:00",
+  :data_debitore #inst "2020-08-06T00:00:00.000000000-00:00",
+  :id "FAT_e6e6e602-b5bb-4bf3-889a-cfd2980119d7",
+  :data_emissione #inst "2020-05-30T22:00:00.000-00:00",
+  :data_scadenza #inst "2020-07-30T22:00:00.000-00:00",
+  :importo 1198}
+ {:sellers_id "SELL897710ce-6963-42f7-884c-cb191160f467",
+  :numero "2720",
+  :data_default nil,
+  :cedenti_id "CED_6a3baf39-2185-4976-8275-69e00bbd55a3",
+  :clienti_id "CLI_a2dc122f-3c49-45b3-a10c-d716e16a203c",
+  :data_pagamento #inst "2020-07-30T22:00:00.000-00:00",
+  :data_debitore #inst "2020-08-06T00:00:00.000000000-00:00",
+  :id "FAT_f93b46e4-ffad-47a9-94a4-47bf13dcc657",
+  :data_emissione #inst "2020-05-30T22:00:00.000-00:00",
+  :data_scadenza #inst "2020-07-30T22:00:00.000-00:00",
+  :importo 464}
+ {:sellers_id "SELL897710ce-6963-42f7-884c-cb191160f467",
+  :numero "1512",
+  :data_default nil,
+  :cedenti_id "CED_df682221-9670-4ee4-aa9a-8b795ff7ecda",
+  :clienti_id "CLI_7faf4f29-9413-4d42-a624-3b5b799c469d",
+  :data_pagamento #inst "2020-05-30T22:00:00.000-00:00",
+  :data_debitore #inst "2020-06-09T00:00:00.000000000-00:00",
+  :id "FAT_a3ac8ab5-0deb-44b1-afb2-8fb4f4009d55",
+  :data_emissione #inst "2020-03-22T23:00:00.000-00:00",
+  :data_scadenza #inst "2020-05-30T22:00:00.000-00:00",
+  :importo 1659}
+ {:sellers_id "SELL897710ce-6963-42f7-884c-cb191160f467",
+  :numero "2962",
+  :data_default nil,
+  :cedenti_id "CED_7b1dc086-0c2a-4217-8c19-e0bc9d46f065",
+  :clienti_id "CLI_419610fe-e100-4f2f-8e0a-e92f041f7b93",
+  :data_pagamento #inst "2020-07-30T22:00:00.000-00:00",
+  :data_debitore #inst "2020-08-06T00:00:00.000000000-00:00",
+  :id "FAT_095e667e-4cff-4959-812d-65b2543c5cf6",
+  :data_emissione #inst "2020-05-30T22:00:00.000-00:00",
+  :data_scadenza #inst "2020-07-30T22:00:00.000-00:00",
+  :importo 560}
+ {:sellers_id "SELL897710ce-6963-42f7-884c-cb191160f467",
+  :numero "6506",
+  :data_default nil,
+  :cedenti_id "CED_44c3cf3f-2e5d-4b0f-94b6-3d549b91ed3d",
+  :clienti_id "CLI_b0fee096-84df-45eb-9c96-8271dbf374b7",
+  :data_pagamento #inst "2020-01-30T23:00:00.000-00:00",
+  :data_debitore #inst "2020-02-07T00:00:00.000000000-00:00",
+  :id "FAT_7441b46e-c56d-4170-8d50-2ff5bec7cd48",
+  :data_emissione #inst "2019-11-29T23:00:00.000-00:00",
+  :data_scadenza #inst "2020-01-30T23:00:00.000-00:00",
+  :importo 508}
+ {:sellers_id "SELL897710ce-6963-42f7-884c-cb191160f467",
+  :numero "2180",
+  :data_default nil,
+  :cedenti_id "CED_11262212-1cd0-485e-83f8-0247272b8695",
+  :clienti_id "CLI_a3d19cbd-112d-405e-bcb6-6ff6e4f1f383",
+  :data_pagamento #inst "2020-06-29T22:00:00.000-00:00",
+  :data_debitore #inst "2020-07-10T00:00:00.000000000-00:00",
+  :id "FAT_cd9a8ca8-3e40-41a6-aa30-2a43edf6c79d",
+  :data_emissione #inst "2020-04-29T22:00:00.000-00:00",
+  :data_scadenza #inst "2020-06-29T22:00:00.000-00:00",
+  :importo 1324}
+ {:sellers_id "SELL897710ce-6963-42f7-884c-cb191160f467",
+  :numero "3308",
+  :data_default nil,
+  :cedenti_id "CED_8f3b144c-7127-4125-bb67-7ebcc4714216",
+  :clienti_id "CLI_c1fe9da7-4f88-470c-86e4-d64ca7d8abc8",
+  :data_pagamento #inst "2020-08-30T22:00:00.000-00:00",
+  :data_debitore #inst "2020-09-10T00:00:00.000000000-00:00",
+  :id "FAT_ab6deda5-68b8-4ed9-872e-84bec46be323",
+  :data_emissione #inst "2020-06-28T22:00:00.000-00:00",
+  :data_scadenza #inst "2020-08-30T22:00:00.000-00:00",
+  :importo 1952}
+ {:sellers_id "SELL897710ce-6963-42f7-884c-cb191160f467",
+  :numero "6373",
+  :data_default nil,
+  :cedenti_id "CED_5ba43128-118f-4594-97ea-b41d920a4857",
+  :clienti_id "CLI_624a2431-ca42-4ce8-8dc5-9ffff60805bb",
+  :data_pagamento #inst "2020-01-30T23:00:00.000-00:00",
+  :data_debitore #inst "2020-02-07T00:00:00.000000000-00:00",
+  :id "FAT_e8a2a96d-02a3-47d9-a45a-89723749d703",
+  :data_emissione #inst "2019-11-29T23:00:00.000-00:00",
+  :data_scadenza #inst "2020-01-30T23:00:00.000-00:00",
+  :importo 1724})
+clj꞉winvoice.query꞉> 
+({:importo 1842}
+ {:importo 288}
+ {:importo 323}
+ {:importo 567}
+ {:importo 824}
+ {:importo 1584}
+ {:importo 576}
+ {:importo 1730}
+ {:importo 660}
+ {:importo 1290}
+ {:importo 288}
+ {:importo 288}
+ {:importo 640}
+ {:importo 1747}
+ {:importo 721}
+ {:importo 1680}
+ {:importo 1780}
+ {:importo 1708}
+ {:importo 715}
+ {:importo 1537}
+ {:importo 439}
+ {:importo 1220}
+ {:importo 904}
+ {:importo 1610}
+ {:importo 1684}
+ {:importo 1425}
+ {:importo 1257}
+ {:importo 1815}
+ {:importo 1198}
+ {:importo 464}
+ {:importo 1659}
+ {:importo 560}
+ {:importo 508}
+ {:importo 1324}
+ {:importo 1952}
+ {:importo 1724})
+clj꞉winvoice.query꞉> 
+#'winvoice.query/invoice-in-range
+clj꞉winvoice.query꞉> 
+#'winvoice.query/invoice-in-range
+clj꞉winvoice.query꞉> 
+#'winvoice.query/invoice-in-range
+clj꞉winvoice.query꞉> 
+; Execution error (PSQLException) at org.postgresql.core.v3.QueryExecutorImpl/receiveErrorResponse (QueryExecutorImpl.java:2674).
+; ERROR: column sellers.nome does not exist
+  Position: 42
+clj꞉winvoice.query꞉> 
+({:standby true,
+  :nome "Stichting Depositary Crescap Global Invoice Fund",
+  :email "trading@crescap.com",
+  :citta "Amersfoort",
+  :profit_fee 200,
+  :walletinfo "32417",
+  :cap "",
+  :sys-user_id "13d5b29c-7890-4f19-accc-18ebb2cd52aa",
+  :pin "54410",
+  :indirizzo "Smallepad 30 F, 3811 MG Amersfoort",
+  :stato "attivo",
+  :conto_wit "GB43BARC20325356080488",
+  :level 0,
+  :id "BUYf0db32c3-44e8-4da6-bc34-425f54832417",
+  :responsabile_finance "Gerrit Berend Oldekamp et al",
+  :telefono "031334673880",
+  :kycstatus "6",
+  :iva "0000000000000000"}
+ {:standby true,
+  :nome "Stefano Crosignani",
+  :email "stefano.crosignani@gmail.com",
+  :citta "Nivelles",
+  :profit_fee 200,
+  :walletinfo "c69ce",
+  :cap "14000",
+  :sys-user_id "30326499-11ef-46a3-89fc-d8d6798fc832",
+  :pin "39763",
+  :indirizzo "Allée de la Cense du Colombier",
+  :stato "attivo",
+  :conto_wit "BE40063535675663",
+  :level 0,
+  :id "BUYd4259ec3-e7c5-4c88-b75f-a89970cc69ce",
+  :responsabile_finance "Stefano Crosignani",
+  :telefono "003249056628",
+  :kycstatus "6",
+  :iva "CRSSFN74T30F205K"})
+clj꞉winvoice.query꞉> 
+#'winvoice.query/get-buyers-starting-with
+clj꞉winvoice.query꞉> 
+; nREPL Connection was closed
+; Connecting ...
+; Hooking up nREPL sessions...
+; Connected session: clj
+; TIPS:
+;   - You can edit the contents here. Use it as a REPL if you like.
+;   - `alt+enter` evaluates the current top level form.
+;   - `ctrl+enter` evaluates the current form.
+;   - `alt+up` and `alt+down` traverse up and down the REPL command history
+;      when the cursor is after the last contents at the prompt
+;   - Clojure lines in stack traces are peekable and clickable.
+clj꞉winvoice.handler꞉> 
+({:ragione_sociale "SO.FARMA MORRA SPA"} {:ragione_sociale "FARVIMA MEDICINALI SPA"} {:ragione_sociale "COMIFAR DISTRIBUZIONE SPA"})
+clj꞉winvoice.query꞉> 
+({:ragione_sociale "STIAL SRL"} {:ragione_sociale "PRODOTTI EBI BUTTI SRL"})
+clj꞉winvoice.query꞉> 
+({:ragione_sociale "STIAL SRL"} {:ragione_sociale "PRODOTTI EBI BUTTI SRL"})
+clj꞉winvoice.query꞉> 
+; nREPL Connection was closed
+; Connecting ...
+; Hooking up nREPL sessions...
+; Interrupting Jack-in process.
+; Connecting ...
+; Hooking up nREPL sessions...
+; Connected session: clj
+; TIPS:
+;   - You can edit the contents here. Use it as a REPL if you like.
+;   - `alt+enter` evaluates the current top level form.
+;   - `ctrl+enter` evaluates the current form.
+;   - `alt+up` and `alt+down` traverse up and down the REPL command history
+;      when the cursor is after the last contents at the prompt
+;   - Clojure lines in stack traces are peekable and clickable.
+clj꞉winvoice.handler꞉> 
+({:id "FAT_b270d2b3-ce15-4597-ab43-1aebac813ca0"} {:id "FAT_633ff1bc-5c05-450c-86ff-3d036de0c72a"} {:id "FAT_83ccde6a-aaa6-463c-b205-70a1d1b380f1"} {:id "FAT_f81ab334-9a00-48ef-85f2-2433a9bd7ac9"} {:id "FAT_7c2d2a95-15fd-495e-af7e-bf3dc5862c98"} {:id "FAT_4cb43821-f261-4f3f-940b-d48913f16bae"} {:id "FAT_0e34edeb-6648-4ebe-ab2d-5d867fa75650"} {:id "FAT_42e63c48-90c4-47d6-bb95-90f0baa8014d"} {:id "FAT_ce760316-e994-43e6-9798-17420b16ccbf"} {:id "FAT_62192458-0a7e-4637-8a6b-5b8c7329765c"} {:id "FAT_97a6da92-8d8c-485b-9d34-52ed029cf9db"} {:id "FAT_ee036d28-52af-4889-ada8-4ce3165dfbd5"} {:id "FAT_6472888f-7048-4e54-bb1c-5e8879c9e879"} {:id "FAT_51ab15f8-1719-4b04-a0b9-a5a59f49c337"} {:id "FAT_0ed790e8-ecfb-4e4e-81ce-9da2e725cf93"} {:id "FAT_3f3ac499-4782-49ff-a065-d14834294664"} {:id "FAT_cc4a5877-b931-42c8-963a-200a52a5bd95"} {:id "FAT_d344af46-fdd5-42b3-8998-0653ab181d61"} {:id "FAT_9b65560d-bf94-4293-9033-9edcb5ca1b24"} {:id "FAT_77962454-58c4-4610-b251-f8c127438715"})
+clj꞉winvoice.query꞉> 
+({:importo 2320276, :data_scadenza #inst "2022-06-29T22:00:00.000-00:00"} {:importo 1229258, :data_scadenza #inst "2022-06-29T22:00:00.000-00:00"} {:importo 8723000, :data_scadenza #inst "2022-06-29T22:00:00.000-00:00"} {:importo 28920294, :data_scadenza #inst "2022-06-29T22:00:00.000-00:00"} {:importo 3111461, :data_scadenza #inst "2022-06-29T22:00:00.000-00:00"} {:importo 4546700, :data_scadenza #inst "2022-05-30T22:00:00.000-00:00"} {:importo 4451200, :data_scadenza #inst "2022-05-30T22:00:00.000-00:00"} {:importo 1805200, :data_scadenza #inst "2022-05-30T22:00:00.000-00:00"} {:importo 2468489, :data_scadenza #inst "2022-06-29T22:00:00.000-00:00"} {:importo 2771831, :data_scadenza #inst "2022-06-29T22:00:00.000-00:00"} {:importo 1718426, :data_scadenza #inst "2022-06-29T22:00:00.000-00:00"} {:importo 6235225, :data_scadenza #inst "2022-06-29T22:00:00.000-00:00"} {:importo 40565000, :data_scadenza #inst "2022-05-30T22:00:00.000-00:00"} {:importo 2559200, :data_scadenza #inst "2022-06-29T22:00:00.000-00:00"} {:importo 11319950, :data_scadenza #inst "2022-06-29T22:00:00.000-00:00"} {:importo 28495909, :data_scadenza #inst "2022-06-29T22:00:00.000-00:00"} {:importo 3430199, :data_scadenza #inst "2022-06-29T22:00:00.000-00:00"} {:importo 12180750, :data_scadenza #inst "2022-06-29T22:00:00.000-00:00"} {:importo 23204800, :data_scadenza #inst "2022-06-29T22:00:00.000-00:00"} {:importo 1337100, :data_scadenza #inst "2022-06-29T22:00:00.000-00:00"} {:importo 31727053, :data_scadenza #inst "2022-06-29T22:00:00.000-00:00"} {:importo 7894850, :data_scadenza #inst "2022-06-29T22:00:00.000-00:00"} {:importo 2275907, :data_scadenza #inst "2022-06-29T22:00:00.000-00:00"} {:importo 6489700, :data_scadenza #inst "2022-06-29T22:00:00.000-00:00"} {:importo 6413200, :data_scadenza #inst "2022-06-29T22:00:00.000-00:00"} {:importo 10344900, :data_scadenza #inst "2022-06-29T22:00:00.000-00:00"} {:importo 18760200, :data_scadenza #inst "2022-06-29T22:00:00.000-00:00"} {:importo 4149473, :data_scadenza #inst "2022-06-29T22:00:00.000-00:00"} {:importo 12341200, :data_scadenza #inst "2022-06-29T22:00:00.000-00:00"} {:importo 3665486, :data_scadenza #inst "2022-06-29T22:00:00.000-00:00"} {:importo 32425965, :data_scadenza #inst "2022-06-29T22:00:00.000-00:00"} {:importo 35416100, :data_scadenza #inst "2022-06-29T22:00:00.000-00:00"} {:importo 446518, :data_scadenza #inst "2022-05-30T22:00:00.000-00:00"} {:importo 2528639, :data_scadenza #inst "2022-06-29T22:00:00.000-00:00"} {:importo 13204250, :data_scadenza #inst "2022-06-29T22:00:00.000-00:00"} {:importo 3278179, :data_scadenza #inst "2022-07-30T22:00:00.000-00:00"} {:importo 9470000, :data_scadenza #inst "2022-07-30T22:00:00.000-00:00"} {:importo 5083200, :data_scadenza #inst "2022-07-30T22:00:00.000-00:00"} {:importo 26269035, :data_scadenza #inst "2022-07-30T22:00:00.000-00:00"} {:importo 2313457, :data_scadenza #inst "2022-07-30T22:00:00.000-00:00"} {:importo 27577853, :data_scadenza #inst "2022-07-30T22:00:00.000-00:00"} {:importo 517195, :data_scadenza #inst "2022-05-30T22:00:00.000-00:00"} {:importo 2309797, :data_scadenza #inst "2022-05-30T22:00:00.000-00:00"} {:importo 5117070, :data_scadenza #inst "2022-05-24T22:00:00.000-00:00"} {:importo 2749143, :data_scadenza #inst "2022-05-24T22:00:00.000-00:00"} {:importo 9714600, :data_scadenza #inst "2022-06-29T22:00:00.000-00:00"} {:importo 2692857, :data_scadenza #inst "2022-05-24T22:00:00.000-00:00"} {:importo 3170380, :data_scadenza #inst "2022-06-29T22:00:00.000-00:00"} {:importo 5977302, :data_scadenza #inst "2022-06-29T22:00:00.000-00:00"} {:importo 7475000, :data_scadenza #inst "2022-06-29T22:00:00.000-00:00"} {:importo 5359893, :data_scadenza #inst "2022-07-30T22:00:00.000-00:00"} {:importo 29714200, :data_scadenza #inst "2022-07-30T22:00:00.000-00:00"} {:importo 12334300, :data_scadenza #inst "2022-07-30T22:00:00.000-00:00"} {:importo 2622600, :data_scadenza #inst "2022-07-30T22:00:00.000-00:00"} {:importo 2471392, :data_scadenza #inst "2022-07-30T22:00:00.000-00:00"} {:importo 11358100, :data_scadenza #inst "2022-07-30T22:00:00.000-00:00"} {:importo 22394375, :data_scadenza #inst "2022-07-30T22:00:00.000-00:00"} {:importo 2467791, :data_scadenza #inst "2022-07-30T22:00:00.000-00:00"} {:importo 3964700, :data_scadenza #inst "2022-07-30T22:00:00.000-00:00"} {:importo 3889200, :data_scadenza #inst "2022-07-30T22:00:00.000-00:00"} {:importo 8012700, :data_scadenza #inst "2022-07-30T22:00:00.000-00:00"} {:importo 2128584, :data_scadenza #inst "2022-07-30T22:00:00.000-00:00"} {:importo 2486818, :data_scadenza #inst "2022-07-30T22:00:00.000-00:00"} {:importo 745602, :data_scadenza #inst "2022-06-29T22:00:00.000-00:00"} {:importo 4869590, :data_scadenza #inst "2022-07-30T22:00:00.000-00:00"} {:importo 17688516, :data_scadenza #inst "2022-07-30T22:00:00.000-00:00"} {:importo 6164783, :data_scadenza #inst "2022-07-30T22:00:00.000-00:00"} {:importo 21274739, :data_scadenza #inst "2022-07-30T22:00:00.000-00:00"} {:importo 24267386, :data_scadenza #inst "2022-07-30T22:00:00.000-00:00"} {:importo 520896, :data_scadenza #inst "2022-06-29T22:00:00.000-00:00"} {:importo 2024200, :data_scadenza #inst "2022-06-14T22:00:00.000-00:00"} {:importo 7256160, :data_scadenza #inst "2022-06-09T22:00:00.000-00:00"} {:importo 895441, :data_scadenza #inst "2022-06-14T22:00:00.000-00:00"} {:importo 1179496, :data_scadenza #inst "2022-06-14T22:00:00.000-00:00"} {:importo 655776, :data_scadenza #inst "2022-05-30T22:00:00.000-00:00"} {:importo 1245376, :data_scadenza #inst "2022-06-14T22:00:00.000-00:00"} {:importo 891743, :data_scadenza #inst "2022-05-30T22:00:00.000-00:00"} {:importo 4655660, :data_scadenza #inst "2022-06-14T22:00:00.000-00:00"} {:importo 793386, :data_scadenza #inst "2022-05-30T22:00:00.000-00:00"} {:importo 1113860, :data_scadenza #inst "2022-05-30T22:00:00.000-00:00"} {:importo 7384320, :data_scadenza #inst "2022-06-09T22:00:00.000-00:00"} {:importo 372537, :data_scadenza #inst "2022-05-30T22:00:00.000-00:00"} {:importo 3663790, :data_scadenza #inst "2022-05-30T22:00:00.000-00:00"} {:importo 910404, :data_scadenza #inst "2022-05-30T22:00:00.000-00:00"} {:importo 862488, :data_scadenza #inst "2022-05-30T22:00:00.000-00:00"} {:importo 3716622, :data_scadenza #inst "2022-07-30T22:00:00.000-00:00"} {:importo 4583451, :data_scadenza #inst "2022-07-30T22:00:00.000-00:00"} {:importo 9932185, :data_scadenza #inst "2022-08-30T22:00:00.000-00:00"} {:importo 30808404, :data_scadenza #inst "2022-08-30T22:00:00.000-00:00"} {:importo 28011790, :data_scadenza #inst "2022-08-30T22:00:00.000-00:00"} {:importo 2348435, :data_scadenza #inst "2022-08-30T22:00:00.000-00:00"} {:importo 8795600, :data_scadenza #inst "2022-08-30T22:00:00.000-00:00"} {:importo 3413870, :data_scadenza #inst "2022-08-30T22:00:00.000-00:00"} {:importo 3600000, :data_scadenza #inst "2022-06-09T22:00:00.000-00:00"} {:importo 769626, :data_scadenza #inst "2022-05-30T22:00:00.000-00:00"} {:importo 646854, :data_scadenza #inst "2022-05-30T22:00:00.000-00:00"} {:importo 769317, :data_scadenza #inst "2022-05-30T22:00:00.000-00:00"} {:importo 652707, :data_scadenza #inst "2022-05-30T22:00:00.000-00:00"} {:importo 1787778, :data_scadenza #inst "2022-06-29T22:00:00.000-00:00"} {:importo 931986, :data_scadenza #inst "2022-06-29T22:00:00.000-00:00"} {:importo 2583527, :data_scadenza #inst "2022-06-29T22:00:00.000-00:00"} {:importo 1682057, :data_scadenza #inst "2022-06-29T22:00:00.000-00:00"} {:importo 2295217, :data_scadenza #inst "2022-07-30T22:00:00.000-00:00"} {:importo 27413200, :data_scadenza #inst "2022-08-30T22:00:00.000-00:00"} {:importo 2877345, :data_scadenza #inst "2022-08-30T22:00:00.000-00:00"} {:importo 3076967, :data_scadenza #inst "2022-08-30T22:00:00.000-00:00"} {:importo 26862939, :data_scadenza #inst "2022-08-30T22:00:00.000-00:00"} {:importo 2080786, :data_scadenza #inst "2022-08-30T22:00:00.000-00:00"} {:importo 4578703, :data_scadenza #inst "2022-09-29T22:00:00.000-00:00"} {:importo 24325440, :data_scadenza #inst "2022-08-30T22:00:00.000-00:00"} {:importo 2432300, :data_scadenza #inst "2022-08-30T22:00:00.000-00:00"} {:importo 2369954, :data_scadenza #inst "2022-06-29T22:00:00.000-00:00"} {:importo 1545667, :data_scadenza #inst "2022-06-29T22:00:00.000-00:00"} {:importo 2201966, :data_scadenza #inst "2022-06-29T22:00:00.000-00:00"} {:importo 2224179, :data_scadenza #inst "2022-07-30T22:00:00.000-00:00"} {:importo 790020, :data_scadenza #inst "2022-05-30T22:00:00.000-00:00"} {:importo 910899, :data_scadenza #inst "2022-06-29T22:00:00.000-00:00"} {:importo 1020195, :data_scadenza #inst "2022-06-29T22:00:00.000-00:00"} {:importo 417162, :data_scadenza #inst "2022-06-29T22:00:00.000-00:00"} {:importo 325340, :data_scadenza #inst "2022-06-29T22:00:00.000-00:00"} {:importo 695058, :data_scadenza #inst "2022-06-29T22:00:00.000-00:00"} {:importo 643401, :data_scadenza #inst "2022-06-29T22:00:00.000-00:00"} {:importo 657360, :data_scadenza #inst "2022-06-29T22:00:00.000-00:00"} {:importo 653236, :data_scadenza #inst "2022-05-30T22:00:00.000-00:00"} {:importo 2573163, :data_scadenza #inst "2022-05-30T22:00:00.000-00:00"} {:importo 924984, :data_scadenza #inst "2022-05-30T22:00:00.000-00:00"} {:importo 5290562, :data_scadenza #inst "2022-05-30T22:00:00.000-00:00"} {:importo 855360, :data_scadenza #inst "2022-06-29T22:00:00.000-00:00"} {:importo 5367747, :data_scadenza #inst "2022-05-30T22:00:00.000-00:00"} {:importo 143401, :data_scadenza #inst "2022-05-30T22:00:00.000-00:00"} {:importo 881399, :data_scadenza #inst "2022-05-30T22:00:00.000-00:00"} {:importo 3697210, :data_scadenza #inst "2022-05-30T22:00:00.000-00:00"} {:importo 139179, :data_scadenza #inst "2022-05-30T22:00:00.000-00:00"} {:importo 2235179, :data_scadenza #inst "2022-05-30T22:00:00.000-00:00"} {:importo 2065096, :data_scadenza #inst "2022-07-30T22:00:00.000-00:00"} {:importo 2020005, :data_scadenza #inst "2022-07-30T22:00:00.000-00:00"} {:importo 2434553, :data_scadenza #inst "2022-07-30T22:00:00.000-00:00"} {:importo 673696, :data_scadenza #inst "2022-07-30T22:00:00.000-00:00"} {:importo 362538, :data_scadenza #inst "2022-06-29T22:00:00.000-00:00"} {:importo 3022045, :data_scadenza #inst "2022-08-30T22:00:00.000-00:00"} {:importo 4119574, :data_scadenza #inst "2022-05-30T22:00:00.000-00:00"} {:importo 1794391, :data_scadenza #inst "2022-08-30T22:00:00.000-00:00"} {:importo 1996000, :data_scadenza #inst "2022-08-30T22:00:00.000-00:00"} {:importo 1537266, :data_scadenza #inst "2022-08-30T22:00:00.000-00:00"} {:importo 950895, :data_scadenza #inst "2022-06-29T22:00:00.000-00:00"} {:importo 10567054, :data_scadenza #inst "2022-05-30T22:00:00.000-00:00"} {:importo 2909651, :data_scadenza #inst "2022-05-30T22:00:00.000-00:00"} {:importo 22332211, :data_scadenza #inst "2022-08-30T22:00:00.000-00:00"} {:importo 19223319, :data_scadenza #inst "2022-08-30T22:00:00.000-00:00"} {:importo 2058720, :data_scadenza #inst "2022-07-30T22:00:00.000-00:00"} {:importo 2064777, :data_scadenza #inst "2022-07-30T22:00:00.000-00:00"} {:importo 431392, :data_scadenza #inst "2022-06-14T22:00:00.000-00:00"} {:importo 4451505, :data_scadenza #inst "2022-07-30T22:00:00.000-00:00"} {:importo 689040, :data_scadenza #inst "2022-06-29T22:00:00.000-00:00"} {:importo 33088941, :data_scadenza #inst "2022-09-29T22:00:00.000-00:00"} {:importo 2385246, :data_scadenza #inst "2022-09-29T22:00:00.000-00:00"} {:importo 28790905, :data_scadenza #inst "2022-09-29T22:00:00.000-00:00"} {:importo 1036137, :data_scadenza #inst "2022-09-29T22:00:00.000-00:00"} {:importo 3422540, :data_scadenza #inst "2022-08-09T22:00:00.000-00:00"} {:importo 1678827, :data_scadenza #inst "2022-05-30T22:00:00.000-00:00"} {:importo 2688179, :data_scadenza #inst "2022-05-30T22:00:00.000-00:00"} {:importo 374784, :data_scadenza #inst "2022-05-30T22:00:00.000-00:00"} {:importo 2817767, :data_scadenza #inst "2022-05-30T22:00:00.000-00:00"} {:importo 3487608, :data_scadenza #inst "2022-09-29T22:00:00.000-00:00"} {:importo 8910200, :data_scadenza #inst "2022-09-29T22:00:00.000-00:00"} {:importo 3050000, :data_scadenza #inst "2022-05-30T22:00:00.000-00:00"} {:importo 3594200, :data_scadenza #inst "2022-05-30T22:00:00.000-00:00"} {:importo 2034000, :data_scadenza #inst "2022-09-14T22:00:00.000-00:00"} {:importo 8578700, :data_scadenza #inst "2022-05-30T22:00:00.000-00:00"} {:importo 1162084, :data_scadenza #inst "2022-07-09T22:00:00.000-00:00"} {:importo 324000, :data_scadenza #inst "2022-09-14T22:00:00.000-00:00"} {:importo 2151030, :data_scadenza #inst "2022-07-09T22:00:00.000-00:00"} {:importo 1546880, :data_scadenza #inst "2022-07-09T22:00:00.000-00:00"} {:importo 528220, :data_scadenza #inst "2022-07-09T22:00:00.000-00:00"} {:importo 2860800, :data_scadenza #inst "2022-09-14T22:00:00.000-00:00"} {:importo 972096, :data_scadenza #inst "2022-06-29T22:00:00.000-00:00"} {:importo 2244800, :data_scadenza #inst "2022-06-29T22:00:00.000-00:00"} {:importo 1615679, :data_scadenza #inst "2022-06-29T22:00:00.000-00:00"} {:importo 1439676, :data_scadenza #inst "2022-06-29T22:00:00.000-00:00"} {:importo 5538813, :data_scadenza #inst "2022-05-30T22:00:00.000-00:00"} {:importo 492002, :data_scadenza #inst "2022-05-30T22:00:00.000-00:00"} {:importo 4957176, :data_scadenza #inst "2022-05-30T22:00:00.000-00:00"} {:importo 5538813, :data_scadenza #inst "2022-05-30T22:00:00.000-00:00"} {:importo 8944157, :data_scadenza #inst "2022-08-30T22:00:00.000-00:00"} {:importo 5066207, :data_scadenza #inst "2022-05-30T22:00:00.000-00:00"} {:importo 10449622, :data_scadenza #inst "2022-09-29T22:00:00.000-00:00"} {:importo 2055206, :data_scadenza #inst "2022-05-30T22:00:00.000-00:00"} {:importo 2061152, :data_scadenza #inst "2022-05-30T22:00:00.000-00:00"} {:importo 1011825, :data_scadenza #inst "2022-05-30T22:00:00.000-00:00"} {:importo 32074204, :data_scadenza #inst "2022-05-30T22:00:00.000-00:00"} {:importo 28957975, :data_scadenza #inst "2022-05-30T22:00:00.000-00:00"} {:importo 2284517, :data_scadenza #inst "2022-05-30T22:00:00.000-00:00"} {:importo 130912, :data_scadenza #inst "2022-05-30T22:00:00.000-00:00"} {:importo 2807053, :data_scadenza #inst "2022-05-30T22:00:00.000-00:00"} {:importo 3807775, :data_scadenza #inst "2022-05-30T22:00:00.000-00:00"} {:importo 4384630, :data_scadenza #inst "2022-05-30T22:00:00.000-00:00"} {:importo 1980140, :data_scadenza #inst "2022-07-09T22:00:00.000-00:00"} {:importo 2307000, :data_scadenza #inst "2022-07-09T22:00:00.000-00:00"} {:importo 900900, :data_scadenza #inst "2022-09-14T22:00:00.000-00:00"} {:importo 294000, :data_scadenza #inst "2022-07-09T22:00:00.000-00:00"} {:importo 66640, :data_scadenza #inst "2022-06-09T22:00:00.000-00:00"} {:importo 42500, :data_scadenza #inst "2022-06-09T22:00:00.000-00:00"} {:importo 149644, :data_scadenza #inst "2022-07-09T22:00:00.000-00:00"} {:importo 1004400, :data_scadenza #inst "2022-09-14T22:00:00.000-00:00"} {:importo 312000, :data_scadenza #inst "2022-09-14T22:00:00.000-00:00"} {:importo 628200, :data_scadenza #inst "2022-09-14T22:00:00.000-00:00"} {:importo 2729700, :data_scadenza #inst "2022-09-14T22:00:00.000-00:00"} {:importo 249606, :data_scadenza #inst "2022-09-14T22:00:00.000-00:00"} {:importo 180600, :data_scadenza #inst "2022-09-14T22:00:00.000-00:00"} {:importo 78000, :data_scadenza #inst "2022-09-14T22:00:00.000-00:00"} {:importo 378494, :data_scadenza #inst "2022-06-09T22:00:00.000-00:00"} {:importo 998528, :data_scadenza #inst "2022-06-09T22:00:00.000-00:00"} {:importo 1182728, :data_scadenza #inst "2022-06-09T22:00:00.000-00:00"} {:importo 35280, :data_scadenza #inst "2022-06-09T22:00:00.000-00:00"} {:importo 326180, :data_scadenza #inst "2022-05-30T22:00:00.000-00:00"} {:importo 349263, :data_scadenza #inst "2022-05-30T22:00:00.000-00:00"} {:importo 1983840, :data_scadenza #inst "2022-05-30T22:00:00.000-00:00"} {:importo 2363460, :data_scadenza #inst "2022-06-09T22:00:00.000-00:00"} {:importo 2033530, :data_scadenza #inst "2022-06-09T22:00:00.000-00:00"} {:importo 204700, :data_scadenza #inst "2022-06-09T22:00:00.000-00:00"} {:importo 1170545, :data_scadenza #inst "2022-06-09T22:00:00.000-00:00"} {:importo 47007942, :data_scadenza #inst "2022-05-30T22:00:00.000-00:00"} {:importo 1034200, :data_scadenza #inst "2022-09-29T22:00:00.000-00:00"} {:importo 1034200, :data_scadenza #inst "2022-09-29T22:00:00.000-00:00"} {:importo 28752594, :data_scadenza #inst "2022-06-29T22:00:00.000-00:00"} {:importo 4189129, :data_scadenza #inst "2022-07-09T22:00:00.000-00:00"} {:importo 1249766, :data_scadenza #inst "2022-06-29T22:00:00.000-00:00"} {:importo 5105700, :data_scadenza #inst "2022-05-30T22:00:00.000-00:00"} {:importo 3714876, :data_scadenza #inst "2022-06-09T22:00:00.000-00:00"} {:importo 1497977, :data_scadenza #inst "2022-06-09T22:00:00.000-00:00"} {:importo 474182, :data_scadenza #inst "2022-07-30T22:00:00.000-00:00"} {:importo 2147015, :data_scadenza #inst "2022-07-30T22:00:00.000-00:00"} {:importo 2131200, :data_scadenza #inst "2022-09-14T22:00:00.000-00:00"} {:importo 2535355, :data_scadenza #inst "2022-07-30T22:00:00.000-00:00"} {:importo 2218171, :data_scadenza #inst "2022-07-30T22:00:00.000-00:00"} {:importo 2180000, :data_scadenza #inst "2022-06-29T22:00:00.000-00:00"} {:importo 1303882, :data_scadenza #inst "2022-07-30T22:00:00.000-00:00"} {:importo 2050610, :data_scadenza #inst "2022-09-29T22:00:00.000-00:00"} {:importo 3373820, :data_scadenza #inst "2022-07-30T22:00:00.000-00:00"} {:importo 387139, :data_scadenza #inst "2022-06-29T22:00:00.000-00:00"} {:importo 2244800, :data_scadenza #inst "2022-06-29T22:00:00.000-00:00"} {:importo 3161456, :data_scadenza #inst "2022-05-30T22:00:00.000-00:00"} {:importo 2061400, :data_scadenza #inst "2022-07-30T22:00:00.000-00:00"} {:importo 972157, :data_scadenza #inst "2022-06-09T22:00:00.000-00:00"} {:importo 527153, :data_scadenza #inst "2022-05-30T22:00:00.000-00:00"} {:importo 396762, :data_scadenza #inst "2022-07-30T22:00:00.000-00:00"} {:importo 26143900, :data_scadenza #inst "2022-05-30T22:00:00.000-00:00"} {:importo 2444900, :data_scadenza #inst "2022-05-30T22:00:00.000-00:00"} {:importo 392530, :data_scadenza #inst "2022-05-30T22:00:00.000-00:00"} {:importo 32054180, :data_scadenza #inst "2022-09-29T22:00:00.000-00:00"} {:importo 27082934, :data_scadenza #inst "2022-09-29T22:00:00.000-00:00"} {:importo 8780700, :data_scadenza #inst "2022-05-30T22:00:00.000-00:00"} {:importo 1891749, :data_scadenza #inst "2022-05-30T22:00:00.000-00:00"} {:importo 12162700, :data_scadenza #inst "2022-05-30T22:00:00.000-00:00"} {:importo 2851445, :data_scadenza #inst "2022-05-30T22:00:00.000-00:00"} {:importo 3202836, :data_scadenza #inst "2022-05-30T22:00:00.000-00:00"} {:importo 2568166, :data_scadenza #inst "2022-05-30T22:00:00.000-00:00"} {:importo 6923400, :data_scadenza #inst "2022-05-30T22:00:00.000-00:00"} {:importo 16719200, :data_scadenza #inst "2022-05-30T22:00:00.000-00:00"} {:importo 8048300, :data_scadenza #inst "2022-05-30T22:00:00.000-00:00"} {:importo 2244410, :data_scadenza #inst "2022-05-30T22:00:00.000-00:00"} {:importo 5009575, :data_scadenza #inst "2022-05-30T22:00:00.000-00:00"} {:importo 4398802, :data_scadenza #inst "2022-05-30T22:00:00.000-00:00"} {:importo 580749, :data_scadenza #inst "2022-05-30T22:00:00.000-00:00"} {:importo 3360024, :data_scadenza #inst "2022-06-09T22:00:00.000-00:00"} {:importo 333957, :data_scadenza #inst "2022-06-29T22:00:00.000-00:00"} {:importo 2180000, :data_scadenza #inst "2022-05-30T22:00:00.000-00:00"} {:importo 7733200, :data_scadenza #inst "2022-05-30T22:00:00.000-00:00"} {:importo 2401106, :data_scadenza #inst "2022-07-19T22:00:00.000-00:00"} {:importo 3270000, :data_scadenza #inst "2022-06-29T22:00:00.000-00:00"} {:importo 406394, :data_scadenza #inst "2022-06-29T22:00:00.000-00:00"} {:importo 8668886, :data_scadenza #inst "2022-07-09T22:00:00.000-00:00"} {:importo 8615830, :data_scadenza #inst "2022-05-19T22:00:00.000-00:00"} {:importo 36950461, :data_scadenza #inst "2022-09-29T22:00:00.000-00:00"} {:importo 2505382, :data_scadenza #inst "2022-09-29T22:00:00.000-00:00"} {:importo 1258197, :data_scadenza #inst "2022-09-29T22:00:00.000-00:00"} {:importo 31465650, :data_scadenza #inst "2022-09-29T22:00:00.000-00:00"} {:importo 1891107, :data_scadenza #inst "2022-06-09T22:00:00.000-00:00"} {:importo 1065600, :data_scadenza #inst "2022-09-14T22:00:00.000-00:00"} {:importo 266000, :data_scadenza #inst "2022-09-14T22:00:00.000-00:00"} {:importo 675270, :data_scadenza #inst "2022-06-09T22:00:00.000-00:00"} {:importo 1582200, :data_scadenza #inst "2022-09-09T22:00:00.000-00:00"} {:importo 839691, :data_scadenza #inst "2022-06-04T22:00:00.000-00:00"} {:importo 4339491, :data_scadenza #inst "2022-05-29T22:00:00.000-00:00"} {:importo 1055866, :data_scadenza #inst "2022-05-30T22:00:00.000-00:00"} {:importo 644646, :data_scadenza #inst "2022-08-30T22:00:00.000-00:00"} {:importo 857952, :data_scadenza #inst "2022-07-30T22:00:00.000-00:00"} {:importo 2440000, :data_scadenza #inst "2022-07-13T22:00:00.000-00:00"} {:importo 615300, :data_scadenza #inst "2022-09-09T22:00:00.000-00:00"} {:importo 93330, :data_scadenza #inst "2022-06-29T22:00:00.000-00:00"} {:importo 8104132, :data_scadenza #inst "2022-05-30T22:00:00.000-00:00"} {:importo 99552, :data_scadenza #inst "2022-07-30T22:00:00.000-00:00"} {:importo 746640, :data_scadenza #inst "2022-07-30T22:00:00.000-00:00"} {:importo 5256196, :data_scadenza #inst "2022-05-30T22:00:00.000-00:00"} {:importo 2015774, :data_scadenza #inst "2022-05-30T22:00:00.000-00:00"} {:importo 1087280, :data_scadenza #inst "2022-06-29T22:00:00.000-00:00"} {:importo 4664249, :data_scadenza #inst "2022-06-29T22:00:00.000-00:00"} {:importo 4827567, :data_scadenza #inst "2022-05-30T22:00:00.000-00:00"} {:importo 1683687, :data_scadenza #inst "2022-05-30T22:00:00.000-00:00"} {:importo 1875351, :data_scadenza #inst "2022-05-30T22:00:00.000-00:00"} {:importo 241255, :data_scadenza #inst "2022-06-29T22:00:00.000-00:00"} {:importo 5925771, :data_scadenza #inst "2022-06-29T22:00:00.000-00:00"} {:importo 2013648, :data_scadenza #inst "2022-08-30T22:00:00.000-00:00"} {:importo 2320422, :data_scadenza #inst "2022-08-30T22:00:00.000-00:00"} {:importo 5145389, :data_scadenza #inst "2022-05-30T22:00:00.000-00:00"} {:importo 3931168, :data_scadenza #inst "2022-05-30T22:00:00.000-00:00"} {:importo 135981, :data_scadenza #inst "2022-05-30T22:00:00.000-00:00"} {:importo 3496047, :data_scadenza #inst "2022-05-30T22:00:00.000-00:00"} {:importo 4290688, :data_scadenza #inst "2022-05-30T22:00:00.000-00:00"} {:importo 3707386, :data_scadenza #inst "2022-06-29T22:00:00.000-00:00"} {:importo 1399157, :data_scadenza #inst "2022-05-30T22:00:00.000-00:00"} {:importo 14173925, :data_scadenza #inst "2022-05-30T22:00:00.000-00:00"} {:importo 6160860, :data_scadenza #inst "2022-05-30T22:00:00.000-00:00"} {:importo 98886, :data_scadenza #inst "2022-05-30T22:00:00.000-00:00"} {:importo 1014909, :data_scadenza #inst "2022-06-29T22:00:00.000-00:00"} {:importo 6408314, :data_scadenza #inst "2022-06-29T22:00:00.000-00:00"} {:importo 758425, :data_scadenza #inst "2022-06-29T22:00:00.000-00:00"} {:importo 624630, :data_scadenza #inst "2022-06-29T22:00:00.000-00:00"} {:importo 1072498, :data_scadenza #inst "2022-06-29T22:00:00.000-00:00"} {:importo 2959720, :data_scadenza #inst "2022-05-30T22:00:00.000-00:00"} {:importo 5032066, :data_scadenza #inst "2022-07-30T22:00:00.000-00:00"} {:importo 3415424, :data_scadenza #inst "2022-08-09T22:00:00.000-00:00"} {:importo 5573379, :data_scadenza #inst "2022-06-29T22:00:00.000-00:00"} {:importo 3364958, :data_scadenza #inst "2022-09-29T22:00:00.000-00:00"} {:importo 1932307, :data_scadenza #inst "2022-07-09T22:00:00.000-00:00"} {:importo 324725, :data_scadenza #inst "2022-06-14T22:00:00.000-00:00"} {:importo 532574, :data_scadenza #inst "2022-08-30T22:00:00.000-00:00"} {:importo 4354124, :data_scadenza #inst "2022-05-30T22:00:00.000-00:00"} {:importo 49782300, :data_scadenza #inst "2022-09-29T22:00:00.000-00:00"} {:importo 802389, :data_scadenza #inst "2022-08-30T22:00:00.000-00:00"} {:importo 841892, :data_scadenza #inst "2022-08-30T22:00:00.000-00:00"} {:importo 708312, :data_scadenza #inst "2022-08-30T22:00:00.000-00:00"} {:importo 1824100, :data_scadenza #inst "2022-09-09T22:00:00.000-00:00"} {:importo 3663790, :data_scadenza #inst "2022-07-30T22:00:00.000-00:00"} {:importo 3240600, :data_scadenza #inst "2022-09-29T22:00:00.000-00:00"} {:importo 1285537, :data_scadenza #inst "2022-07-14T22:00:00.000-00:00"} {:importo 119600, :data_scadenza #inst "2022-09-09T22:00:00.000-00:00"} {:importo 554013, :data_scadenza #inst "2022-07-30T22:00:00.000-00:00"} {:importo 51798, :data_scadenza #inst "2022-09-09T22:00:00.000-00:00"} {:importo 5724240, :data_scadenza #inst "2022-06-09T22:00:00.000-00:00"} {:importo 4592233, :data_scadenza #inst "2022-08-15T22:00:00.000-00:00"} {:importo 4155161, :data_scadenza #inst "2022-08-09T22:00:00.000-00:00"} {:importo 5153082, :data_scadenza #inst "2022-05-30T22:00:00.000-00:00"} {:importo 3879358, :data_scadenza #inst "2022-09-29T22:00:00.000-00:00"} {:importo 26751700, :data_scadenza #inst "2022-09-29T22:00:00.000-00:00"} {:importo 3565276, :data_scadenza #inst "2022-09-29T22:00:00.000-00:00"} {:importo 6838500, :data_scadenza #inst "2022-09-29T22:00:00.000-00:00"} {:importo 2934564, :data_scadenza #inst "2022-09-29T22:00:00.000-00:00"} {:importo 5300888, :data_scadenza #inst "2022-09-29T22:00:00.000-00:00"} {:importo 1633100, :data_scadenza #inst "2022-09-29T22:00:00.000-00:00"} {:importo 4287355, :data_scadenza #inst "2022-09-29T22:00:00.000-00:00"} {:importo 6954200, :data_scadenza #inst "2022-09-29T22:00:00.000-00:00"} {:importo 12755200, :data_scadenza #inst "2022-09-29T22:00:00.000-00:00"} {:importo 36428808, :data_scadenza #inst "2022-10-30T23:00:00.000-00:00"} {:importo 2637514, :data_scadenza #inst "2022-10-30T23:00:00.000-00:00"} {:importo 13061000, :data_scadenza #inst "2022-09-29T22:00:00.000-00:00"} {:importo 1604778, :data_scadenza #inst "2022-07-30T22:00:00.000-00:00"} {:importo 4995900, :data_scadenza #inst "2022-08-30T22:00:00.000-00:00"} {:importo 15743124, :data_scadenza #inst "2022-08-30T22:00:00.000-00:00"} {:importo 2926170, :data_scadenza #inst "2022-05-19T22:00:00.000-00:00"} {:importo 1452436, :data_scadenza #inst "2022-06-09T22:00:00.000-00:00"} {:importo 14270458, :data_scadenza #inst "2022-08-30T22:00:00.000-00:00"} {:importo 3304077, :data_scadenza #inst "2022-08-30T22:00:00.000-00:00"} {:importo 18612549, :data_scadenza #inst "2022-05-30T22:00:00.000-00:00"} {:importo 3466486, :data_scadenza #inst "2022-06-29T22:00:00.000-00:00"} {:importo 2400000, :data_scadenza #inst "2022-09-09T22:00:00.000-00:00"} {:importo 1573600, :data_scadenza #inst "2022-09-09T22:00:00.000-00:00"} {:importo 1346100, :data_scadenza #inst "2022-09-09T22:00:00.000-00:00"} {:importo 97000, :data_scadenza #inst "2022-09-09T22:00:00.000-00:00"} {:importo 778000, :data_scadenza #inst "2022-07-26T22:00:00.000-00:00"} {:importo 2829500, :data_scadenza #inst "2022-07-26T22:00:00.000-00:00"} {:importo 1812400, :data_scadenza #inst "2022-07-26T22:00:00.000-00:00"} {:importo 2400000, :data_scadenza #inst "2022-07-26T22:00:00.000-00:00"} {:importo 845000, :data_scadenza #inst "2022-07-26T22:00:00.000-00:00"} {:importo 900000, :data_scadenza #inst "2022-07-26T22:00:00.000-00:00"} {:importo 515200, :data_scadenza #inst "2022-07-26T22:00:00.000-00:00"} {:importo 2100840, :data_scadenza #inst "2022-06-29T22:00:00.000-00:00"} {:importo 139954, :data_scadenza #inst "2022-06-29T22:00:00.000-00:00"} {:importo 1631720, :data_scadenza #inst "2022-06-29T22:00:00.000-00:00"} {:importo 4229972, :data_scadenza #inst "2022-06-29T22:00:00.000-00:00"} {:importo 1244798, :data_scadenza #inst "2022-06-29T22:00:00.000-00:00"} {:importo 3599926, :data_scadenza #inst "2022-06-29T22:00:00.000-00:00"} {:importo 5754809, :data_scadenza #inst "2022-05-30T22:00:00.000-00:00"} {:importo 1128795, :data_scadenza #inst "2022-06-29T22:00:00.000-00:00"} {:importo 24918706, :data_scadenza #inst "2022-05-30T22:00:00.000-00:00"} {:importo 1268020, :data_scadenza #inst "2022-06-29T22:00:00.000-00:00"} {:importo 1744439, :data_scadenza #inst "2022-06-29T22:00:00.000-00:00"} {:importo 3559155, :data_scadenza #inst "2022-06-29T22:00:00.000-00:00"} {:importo 289733, :data_scadenza #inst "2022-06-29T22:00:00.000-00:00"} {:importo 8482887, :data_scadenza #inst "2022-05-30T22:00:00.000-00:00"} {:importo 4420524, :data_scadenza #inst "2022-06-29T22:00:00.000-00:00"} {:importo 8810309, :data_scadenza #inst "2022-06-29T22:00:00.000-00:00"} {:importo 4186959, :data_scadenza #inst "2022-06-29T22:00:00.000-00:00"} {:importo 4263102, :data_scadenza #inst "2022-09-29T22:00:00.000-00:00"} {:importo 34405405, :data_scadenza #inst "2022-10-30T23:00:00.000-00:00"} {:importo 4832910, :data_scadenza #inst "2022-07-09T22:00:00.000-00:00"} {:importo 209913, :data_scadenza #inst "2022-05-30T22:00:00.000-00:00"} {:importo 1790233, :data_scadenza #inst "2022-05-30T22:00:00.000-00:00"} {:importo 43607857, :data_scadenza #inst "2022-05-30T22:00:00.000-00:00"} {:importo 631334, :data_scadenza #inst "2022-06-29T22:00:00.000-00:00"} {:importo 409480, :data_scadenza #inst "2022-05-30T22:00:00.000-00:00"} {:importo 6036427, :data_scadenza #inst "2022-06-29T22:00:00.000-00:00"} {:importo 1278016, :data_scadenza #inst "2022-07-09T22:00:00.000-00:00"} {:importo 660996, :data_scadenza #inst "2022-07-09T22:00:00.000-00:00"} {:importo 155388, :data_scadenza #inst "2022-06-14T22:00:00.000-00:00"} {:importo 820317, :data_scadenza #inst "2022-06-25T22:00:00.000-00:00"} {:importo 418954, :data_scadenza #inst "2022-08-30T22:00:00.000-00:00"} {:importo 1470364, :data_scadenza #inst "2022-06-04T22:00:00.000-00:00"} {:importo 5134234, :data_scadenza #inst "2022-06-04T22:00:00.000-00:00"} {:importo 3574756, :data_scadenza #inst "2022-06-04T22:00:00.000-00:00"} {:importo 1591350, :data_scadenza #inst "2022-06-04T22:00:00.000-00:00"} {:importo 5491405, :data_scadenza #inst "2022-06-04T22:00:00.000-00:00"} {:importo 1950200, :data_scadenza #inst "2022-09-09T22:00:00.000-00:00"} {:importo 532800, :data_scadenza #inst "2022-09-09T22:00:00.000-00:00"} {:importo 275100, :data_scadenza #inst "2022-09-09T22:00:00.000-00:00"} {:importo 36048037, :data_scadenza #inst "2022-10-30T23:00:00.000-00:00"} {:importo 289600, :data_scadenza #inst "2022-09-09T22:00:00.000-00:00"} {:importo 4764716, :data_scadenza #inst "2022-10-30T23:00:00.000-00:00"} {:importo 2414086, :data_scadenza #inst "2022-10-30T23:00:00.000-00:00"} {:importo 4660400, :data_scadenza #inst "2022-06-29T22:00:00.000-00:00"} {:importo 19984500, :data_scadenza #inst "2022-09-29T22:00:00.000-00:00"} {:importo 2420266, :data_scadenza #inst "2022-10-30T23:00:00.000-00:00"} {:importo 662166, :data_scadenza #inst "2022-06-04T22:00:00.000-00:00"} {:importo 3222820, :data_scadenza #inst "2022-06-04T22:00:00.000-00:00"} {:importo 3289339, :data_scadenza #inst "2022-06-04T22:00:00.000-00:00"} {:importo 10265, :data_scadenza #inst "2022-06-04T22:00:00.000-00:00"} {:importo 555465, :data_scadenza #inst "2022-06-04T22:00:00.000-00:00"} {:importo 605424, :data_scadenza #inst "2022-08-30T22:00:00.000-00:00"} {:importo 5988675, :data_scadenza #inst "2022-06-29T22:00:00.000-00:00"} {:importo 1385889, :data_scadenza #inst "2022-08-30T22:00:00.000-00:00"} {:importo 1447986, :data_scadenza #inst "2022-07-30T22:00:00.000-00:00"} {:importo 7414146, :data_scadenza #inst "2022-09-29T22:00:00.000-00:00"} {:importo 2255686, :data_scadenza #inst "2022-08-30T22:00:00.000-00:00"} {:importo 3506572, :data_scadenza #inst "2022-09-09T22:00:00.000-00:00"} {:importo 1065600, :data_scadenza #inst "2022-09-09T22:00:00.000-00:00"} {:importo 39406000, :data_scadenza #inst "2022-05-30T22:00:00.000-00:00"} {:importo 24533712, :data_scadenza #inst "2022-05-30T22:00:00.000-00:00"} {:importo 2647800, :data_scadenza #inst "2022-10-09T22:00:00.000-00:00"} {:importo 5830000, :data_scadenza #inst "2022-06-29T22:00:00.000-00:00"} {:importo 5830000, :data_scadenza #inst "2022-07-30T22:00:00.000-00:00"} {:importo 11346000, :data_scadenza #inst "2022-05-29T22:00:00.000-00:00"} {:importo 6807600, :data_scadenza #inst "2022-06-25T22:00:00.000-00:00"} {:importo 473445, :data_scadenza #inst "2022-09-29T22:00:00.000-00:00"} {:importo 2038793, :data_scadenza #inst "2022-06-08T22:00:00.000-00:00"} {:importo 203741, :data_scadenza #inst "2022-06-08T22:00:00.000-00:00"} {:importo 433100, :data_scadenza #inst "2022-07-30T22:00:00.000-00:00"} {:importo 1385554, :data_scadenza #inst "2022-08-30T22:00:00.000-00:00"} {:importo 1870318, :data_scadenza #inst "2022-05-30T22:00:00.000-00:00"} {:importo 27124782, :data_scadenza #inst "2022-05-30T22:00:00.000-00:00"} {:importo 1104146, :data_scadenza #inst "2022-07-30T22:00:00.000-00:00"} {:importo 4118778, :data_scadenza #inst "2022-05-30T22:00:00.000-00:00"} {:importo 778968, :data_scadenza #inst "2022-05-30T22:00:00.000-00:00"} {:importo 2519656, :data_scadenza #inst "2022-05-30T22:00:00.000-00:00"} {:importo 4199102, :data_scadenza #inst "2022-06-29T22:00:00.000-00:00"} {:importo 5966288, :data_scadenza #inst "2022-06-29T22:00:00.000-00:00"} {:importo 2782833, :data_scadenza #inst "2022-07-30T22:00:00.000-00:00"} {:importo 8343609, :data_scadenza #inst "2022-06-29T22:00:00.000-00:00"} {:importo 6182703, :data_scadenza #inst "2022-06-29T22:00:00.000-00:00"} {:importo 200143, :data_scadenza #inst "2022-06-29T22:00:00.000-00:00"} {:importo 854065, :data_scadenza #inst "2022-07-30T22:00:00.000-00:00"} {:importo 5499843, :data_scadenza #inst "2022-07-30T22:00:00.000-00:00"} {:importo 5034359, :data_scadenza #inst "2022-07-30T22:00:00.000-00:00"} {:importo 1845748, :data_scadenza #inst "2022-08-09T22:00:00.000-00:00"} {:importo 8516800, :data_scadenza #inst "2022-09-29T22:00:00.000-00:00"} {:importo 2438400, :data_scadenza #inst "2022-10-09T22:00:00.000-00:00"} {:importo 2765008, :data_scadenza #inst "2022-06-29T22:00:00.000-00:00"} {:importo 13010861, :data_scadenza #inst "2022-09-14T22:00:00.000-00:00"} {:importo 14062110, :data_scadenza #inst "2022-09-19T22:00:00.000-00:00"} {:importo 15161135, :data_scadenza #inst "2022-09-19T22:00:00.000-00:00"} {:importo 12183310, :data_scadenza #inst "2022-09-09T22:00:00.000-00:00"} {:importo 17731968, :data_scadenza #inst "2022-09-09T22:00:00.000-00:00"} {:importo 5988675, :data_scadenza #inst "2022-06-29T22:00:00.000-00:00"} {:importo 3828763, :data_scadenza #inst "2022-05-19T22:00:00.000-00:00"} {:importo 655945, :data_scadenza #inst "2022-05-19T22:00:00.000-00:00"} {:importo 33095504, :data_scadenza #inst "2022-06-09T22:00:00.000-00:00"} {:importo 17876400, :data_scadenza #inst "2022-09-29T22:00:00.000-00:00"} {:importo 3448198, :data_scadenza #inst "2022-10-30T23:00:00.000-00:00"} {:importo 9386200, :data_scadenza #inst "2022-08-30T22:00:00.000-00:00"} {:importo 72423400, :data_scadenza #inst "2022-08-30T22:00:00.000-00:00"} {:importo 11287800, :data_scadenza #inst "2022-09-29T22:00:00.000-00:00"} {:importo 2394226, :data_scadenza #inst "2022-09-14T22:00:00.000-00:00"} {:importo 4218300, :data_scadenza #inst "2022-08-30T22:00:00.000-00:00"} {:importo 2215600, :data_scadenza #inst "2022-09-29T22:00:00.000-00:00"} {:importo 5239200, :data_scadenza #inst "2022-08-30T22:00:00.000-00:00"} {:importo 32460000, :data_scadenza #inst "2022-09-29T22:00:00.000-00:00"} {:importo 3455846, :data_scadenza #inst "2022-09-29T22:00:00.000-00:00"} {:importo 2875700, :data_scadenza #inst "2022-09-29T22:00:00.000-00:00"})
+clj꞉winvoice.query꞉> 
+; nREPL Connection was closed
