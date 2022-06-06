@@ -13,7 +13,8 @@
                  [ring/ring-defaults "0.3.3"]
                  [compojure "1.6.2" :exclusions [ring/ring-core]]
                  [http-kit "2.5.3"]
-                 [ring/ring-json "0.5.1"]]
+                 [ring/ring-json "0.5.1"]
+                 [ring-middleware-format "0.7.5"]]
   
   :main winvoice.handler
   :plugins [[lein-ring "0.12.5"]]

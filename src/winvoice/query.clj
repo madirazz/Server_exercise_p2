@@ -7,8 +7,8 @@
             [clj-time.core]
             [clojure.string :as str]))
 
-(declare aste)
 (declare bids)
+(declare aste)
 (declare buyers)
 (declare fatture)
 (declare sellers)
@@ -125,4 +125,27 @@
                       {:fatture.importo [< max-amount]}
                       {:aste.stato "ANTICIPATA"}))
           (fields :fatture.importo :fatture.data_scadenza)))
+
+;;Server exercise part 2
+;;create a route to update the 'anticipo_richiesto'. The parameter of the route must be an integer in basis point representing a percentage. 
+;;This percentage must be used on the invoice amount to obtain your new anticipo_richiesto
+(defn update-anticipo-richiesto [id percentage]
+  (let [amount (select fatture
+                       (where {:id [= id]})
+                       (fields :importo))]
+    (let [new-amount (* (/ percentage 10000.0) (:importo (first amount)))]
+      (update aste
+            (set-fields {:anticipo_richiesto new-amount})
+            (where {:fatture_id [= id]})))))
+    
+
+
+;;create a route to insert a new seller. The minimun set of parameters must include the ragione_sociale, the iva and the iva2
+;;update every route response to return a 200 with json response body. Each route that is not a GET must receive a json as the input parameters
+(defn uuid [] (.toString (java.util.UUID/randomUUID)))
+
+(defn add-new-seller [ ragionale-sociale iva iva2]
+  (insert sellers
+          (values {:id (str "SELL" (uuid)) :ragione_sociale ragionale-sociale :iva iva :iva2 iva2})))
+
 
