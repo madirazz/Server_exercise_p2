@@ -51,17 +51,20 @@
   (PUT "/api/winvoice/update-anticipo-richiesto" [id percentage]
     {:status 200
      :header {"Content-Type" "text/json"}
-     :body   (json/write-str (let [num1 id
-                                   num2 (read-string percentage)] (query/update-anticipo-richiesto num1 num2)))})
+     :body    (let [num1 id
+                    num2  percentage]
+                    (query/update-anticipo-richiesto num1 num2))})
 
   ;;http://127.0.0.1:3000/api/winvoice/new-seller
-  ;; {"ragionale-sociale": "100", "iva": "101", "iva2": "103"}
+  ;; {"ragionale-sociale": "refef", "iva": "101", "iva2": "103"}
   (POST "/api/winvoice/new-seller" [ragionale-sociale iva iva2]
     {:status 200
      :header {"Content-Type" "text/json"}
-     :body (json/write-str (let [num1 (read-string ragionale-sociale)
-                                 num2 (read-string iva)
-                                 num3 (read-string iva2)] (query/add-new-seller num1 num2 num3)))})
+     :body (let [rs  ragionale-sociale
+                num1 iva
+                num2  iva2] 
+                (query/add-new-seller rs num1 num2))})
+  
   (GET "/" [] "hello")
   (route/resources "/")
   (route/not-found "Not Found"))
