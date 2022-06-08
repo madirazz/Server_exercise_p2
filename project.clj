@@ -14,10 +14,12 @@
                  [compojure "1.6.2" :exclusions [ring/ring-core]]
                  [http-kit "2.5.3"]
                  [ring/ring-json "0.5.1"]
-                 [ring-middleware-format "0.7.5"]]
+                 [ring-middleware-format "0.7.5"]
+                 [com.novemberain/validateur "2.6.0"]
+                 [org.clojure/algo.generic "0.1.3"]]
   
   :main winvoice.handler
-  :plugins [[lein-ring "0.12.5"]]
+  :plugins [[lein-ring "0.12.6"]]
   :ring {:handler winvoice.handler/app}
   :profiles
   {:dev {:dependencies [[org.clojure/tools.namespace "1.2.0"]

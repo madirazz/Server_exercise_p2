@@ -94,7 +94,9 @@
   (select sellers
           (where (and {:stato "attivo"}
                       {:iva [like (str iva "%")]}))))
+(get-active-sellers 00)
 
+(select sellers)
 ;;Select from buyer all buyers whose name starts with a given string
 (defn get-buyers-starting-with [start]
   (select buyers
@@ -144,8 +146,8 @@
 ;;update every route response to return a 200 with json response body. Each route that is not a GET must receive a json as the input parameters
 (defn uuid [] (.toString (java.util.UUID/randomUUID)))
 
-(defn add-new-seller [ ragionale-sociale iva iva2]
+(defn add-new-seller [ragione_sociale iva iva2]
   (insert sellers
-          (values {:id (str "SELL" (uuid)) :ragione_sociale ragionale-sociale :iva iva :iva2 iva2})))
+          (values {:id (str "SELL" (uuid)) :ragione_sociale ragione_sociale :iva iva :iva2 iva2})))
 
 
