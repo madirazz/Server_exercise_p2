@@ -15,24 +15,24 @@
 
 
 (defroutes app-routes
-  ;;http://127.0.0.1:3000/api/winvoice/active-seller/080757700
-  (GET "/api/winvoice/active-seller/:iva" [iva]
+  ;;http://127.0.0.1:3000/api/winvoice/active-seller?iva=080757700
+  (GET "/api/winvoice/active-seller" [iva]
     (utl/build-response-map (query/get-active-sellers iva)))
 
-  ;;http://127.0.0.1:3000/api/winvoice/buyers-starting-with/St
-  (GET "/api/winvoice/buyers-starting-with/:start" [start]
+  ;;http://127.0.0.1:3000/api/winvoice/buyers-starting-with?start=St
+  (GET "/api/winvoice/buyers-starting-with" [start]
     (utl/build-response-map (query/get-buyers-starting-with start)))
 
-  ;;http://127.0.0.1:3000/api/winvoice/get-debtors-rs/SELLb2b7c9d9-28d0-4c4d-b8f5-e62d8846a3fd
-  (GET "/api/winvoice/get-debtors-rs/:seller-id" [seller-id]
+  ;;http://127.0.0.1:3000/api/winvoice/get-debtors-rs?seller-id=SELLb2b7c9d9-28d0-4c4d-b8f5-e62d8846a3fd
+  (GET "/api/winvoice/get-debtors-rs" [seller-id]
     (utl/build-response-map (query/get-debtors-rs seller-id)))
 
-  ;;http://127.0.0.1:3000/api/winvoice/get-fatture-due/SELL1c2dd604-d3a1-43e2-bb66-66ee283e91f6
-  (GET "/api/winvoice/get-fatture-due/:seller-id" [seller-id]
+  ;;http://127.0.0.1:3000/api/winvoice/get-fatture-due?seller-id=SELL1c2dd604-d3a1-43e2-bb66-66ee283e91f6
+  (GET "/api/winvoice/get-fatture-due" [seller-id]
     (utl/build-response-map (query/get-fatture-due seller-id)))
   
-  ;;http://127.0.0.1:3000/api/winvoice/get-invoice-amount-anticipata/1523549/2523549
-  (GET "/api/winvoice/get-invoice-amount-anticipata/:min/:max" [min max]
+  ;;http://127.0.0.1:3000/api/winvoice/get-invoice-amount-anticipata?min=1523549&max=2523549
+  (GET "/api/winvoice/get-invoice-amount-anticipata" [min max]
     (utl/build-response-map  (query/get-invoice-amount-anticipata (Integer/parseInt min) (Integer/parseInt max))))
 
   ;;http://127.0.0.1:3000/api/winvoice/update-anticipo-richiesto
