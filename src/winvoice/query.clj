@@ -144,7 +144,7 @@
 
 ;;create a route to insert a new seller. The minimun set of parameters must include the ragione_sociale, the iva and the iva2
 ;;update every route response to return a 200 with json response body. Each route that is not a GET must receive a json as the input parameters
-(defn uuid [] (.toString (java.util.UUID/randomUUID)))
+(defn uuid [] (str (java.util.UUID/randomUUID)))
 
 (defn add-new-seller [ragione_sociale iva iva2]
   (insert sellers

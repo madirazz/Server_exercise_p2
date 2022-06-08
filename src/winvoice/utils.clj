@@ -18,11 +18,11 @@
                
                (v/format-of :iva
                             :format #"^[0-9]{10,12}$|^([A-Z]{6}[0-9LMNPQRSTUV]{2}[ABCDEHLMPRST]{1}[0-9LMNPQRSTUV]{2}[A-Z]{1}[0-9LMNPQRSTUV]{3}[A-Z]{1})$|([0-9]{11})$"
-                            :message "Please insert a valid value. Either an integer of lenght 10 to 12 or Italian fiscal code format")
+                            :message "Please insert a valid value. Either it is of length 10 to 12 or Italian fiscal code format")
                
                (v/format-of :iva2 
                             :format #"^([0-9]{10,12})$"
-                            :message "Must be an integer of lenght 10 to 12"))]
+                            :message "Must be of length 10 to 12"))]
     (fmap vec (v-set params))))
 
 ;;percentage, it's a number range of valeus permitted vary on  [1, 100]

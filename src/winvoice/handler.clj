@@ -33,21 +33,28 @@
   
   ;;http://127.0.0.1:3000/api/winvoice/get-invoice-amount-anticipata?min=1523549&max=2523549
   (GET "/api/winvoice/get-invoice-amount-anticipata" [min max]
-    (utl/build-response-map  (query/get-invoice-amount-anticipata (Integer/parseInt min) (Integer/parseInt max))))
+    (utl/build-response-map  (query/get-invoice-amount-anticipata 
+                              (try (Integer/parseInt min)
+                                   (catch Exception e (println "Error : " (.getMessage e))))
+                              (try (Integer/parseInt max)
+                                  (catch Exception e (println "Error : " (.getMessage e)))
+                                   ))))
 
   ;;http://127.0.0.1:3000/api/winvoice/update-anticipo-richiesto
   ;;{"id": "FAT_e2d36a44-3837-4415-a18d-f30dbbcd0d3c", "percentage": "10000"}
   (PUT "/api/winvoice/update-anticipo-richiesto" [id percentage]
-    (utl/build-response-map (if (empty? (utl/update-anticipo-richiesto-validation {:id id :percentage (Integer/parseInt percentage)}))
-                          (query/update-anticipo-richiesto id (Integer/parseInt percentage))
-                          (utl/update-anticipo-richiesto-validation {:id id :percentage (Integer/parseInt percentage)}))))
+    (utl/build-response-map
+     (if-let [errors (not-empty (utl/update-anticipo-richiesto-validation {:id id :percentage (Integer/parseInt percentage)}))]
+       errors
+       (query/update-anticipo-richiesto id (Integer/parseInt percentage)))))
   
   ;;http://127.0.0.1:3000/api/winvoice/new-seller
   ;; {"ragione_sociale": "Raz", "iva": "", "iva2": ""}
   (POST "/api/winvoice/new-seller" [ragione_sociale iva iva2]
-     (utl/build-response-map (if (empty? (utl/new-seller-validation {:ragione_sociale ragione_sociale :iva iva :iva2 iva2}))
-                            (query/add-new-seller ragione_sociale iva iva2)
-                            (utl/new-seller-validation {:ragione_sociale ragione_sociale :iva iva :iva2 iva2}))))
+     (utl/build-response-map 
+      (if-let [errors (not-empty (utl/new-seller-validation {:ragione_sociale ragione_sociale :iva iva :iva2 iva2}))]
+        errors
+        (query/add-new-seller ragione_sociale iva iva2))))
   
   (GET "/" [] "It is working :D")
   (route/resources "/")
